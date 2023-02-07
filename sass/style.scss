@@ -1,0 +1,420 @@
+//DEFAULT
+* {
+    margin:0;
+    padding:0;
+}
+
+.container {
+    max-width: 1320px;
+    margin:0 auto;
+}
+
+.flex-container {
+    display:flex;
+}
+
+.flex-container2 {
+    display:flex;
+    gap:100px;
+}
+
+#navigation {
+    height:93px;
+    background-color:#B50014;
+
+   img {
+        
+        z-index: 100;
+
+    }
+   
+        
+    ul {
+        display:flex;
+        justify-content: center;
+        height:93px;
+      
+        li {
+            list-style: none;
+            padding-top:40px;
+            padding-left:41px;
+
+            
+        
+
+            a {
+                text-decoration: none;
+                color:#FFFFFF;
+                font-family: 'Roboto', sans-serif;
+                
+                
+            
+            }
+        }
+    
+}
+}
+
+#workTime {
+  
+    height:30px;
+    background-color:#252525;
+    color:#fff;
+    text-align: right;
+
+    .content {
+        padding-top:6px;
+        font-family: 'Roboto', sans-serif;
+        span {
+            font-size:14px;
+            
+        }
+    }
+    
+
+}
+
+
+#hero {
+    height:679px;
+    background-image:url('/pictures/background.svg');
+    position:relative;
+
+    .text {
+        width:629px;
+        height:348px;
+        background-color:#0000004D;
+        position:absolute;
+        top:163px;
+
+
+        h1 {
+            color:#fff;
+            font-family: 'Roboto', sans-serif;
+            width:242px;
+            font-weight: bolder;
+            padding-top:67px;
+            padding-bottom:15px;
+        }
+
+        p {
+            color:#fff;
+            font-weight: lighter;
+            font-family: 'Roboto', sans-serif;
+            line-height: 24px;
+            width:275px;
+        }
+      
+        
+        
+    }
+}
+
+#hero2 {
+    background-color:#000;
+    height: 712px;
+
+
+   .content {
+        gap:125px;
+        font-family: 'Roboto', sans-serif;
+    h1 {
+        color:#fff;
+        padding-top:160px;
+        font-size:32px;
+        
+    }
+
+    h2 {
+        color:#fff;
+        font-size:22px;
+    }
+
+    p {
+        color:#fff;
+        padding-top:41px;
+        width:429px;
+        font-size:16px;
+        line-height: 24px;
+    }
+
+    #food1 {
+        padding-top:114px;
+        padding-bottom:15px;
+    }
+
+
+    .pictures {
+    
+
+        #food2 {
+            padding-right: 17px;
+        }
+    
+        #food4 {
+            padding-left:18px;
+        }
+    }
+
+   }
+
+   .buttons {
+
+        margin-top:66px;
+        text-align: center;
+
+    button {
+        background-color: #A62120;
+        color:white;
+        text-decoration: none;
+        border:1px solid #fff;
+        padding-top:12px;
+        padding-bottom:13px;
+        border-radius: 20px;
+        width:174px;
+
+    }
+
+    #leftBtn {
+        margin-right:16px;
+    }
+
+}
+}
+
+#hero3 {
+
+    height: 642px;
+    background-color: #A62120;
+   
+
+    .text {
+        
+        background-color: #A62120;
+        height:642px;
+        width:960px;
+        padding-left:117px;
+
+        h1 {
+            padding-top:128px;
+            padding-bottom:29px;
+            
+            color:#fff;
+            width:231px;
+        }
+
+        button {
+            background-color: #fff;
+            color:#252525;
+            text-decoration: none;
+            border:1px solid #FF0000;
+            padding-top:12px;
+            padding-bottom:13px;
+            border-radius: 20px;
+            width:174px;
+            font-size:16px;
+            margin-top:47px;
+        }
+
+        ul {
+            width:291px;
+
+            li {
+                color:#fff;
+                line-height: 24px;
+            }
+
+        }
+
+
+
+    }
+
+    .background {
+        height:642px;
+        width:960px;
+        
+    }
+    
+   
+}
+
+
+#hero4 {
+
+    background-color:#000;
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+
+    h1 {
+        color:#fff;
+        padding-top:119px;
+        padding-bottom:16px;
+    }
+
+    h2 {
+        color:#fff;
+    }
+
+    p {
+        color:#fff;
+        padding-top:65px;
+        padding-bottom: 50px;
+        width:652px;
+        margin:auto;
+    }
+
+    button {
+        background-color: #A62120;
+        color:white;
+        text-decoration: none;
+        border:1px solid #fff;
+        padding-top:12px;
+        padding-bottom:13px;
+        border-radius: 20px;
+        width:174px;
+        height:47px;
+        font-size:16px;
+
+    }
+
+    .pictures {
+        padding-left:16px;
+        padding-bottom:227px;
+    }
+
+    .logoNew {
+        padding:89px 0;
+    }
+   
+}
+
+
+#hero5 {
+    background-color: #A62120;
+    height:705px;
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+
+    .background {
+       
+
+    }
+
+    .text {
+        width:50%;
+        position:absolute;
+        right:0;
+
+
+
+        h1 {
+            
+            width:432px;
+
+        }
+
+        h2 {
+            width:402px;
+        }
+
+        p {
+            width:431px;
+
+        }
+
+
+    }
+}
+
+
+#hero6 {
+    background-image: url('/pictures/background5.png');
+    background-color: #000;
+    height:540px;
+    color:#fff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+    h1 {
+        padding-top:193px;
+        padding-bottom:40px;
+    }
+
+    button {
+        background-color: #fff;
+        color:#252525;
+        text-decoration: none;
+        border:1px solid #FF0000;
+        padding-top:12px;
+        padding-bottom:13px;
+        border-radius: 20px;
+        width:174px;
+        font-size:16px;
+        margin-top:47px;
+    }
+
+   
+}
+
+
+#hero7 {
+    background-color: #000;
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+
+    .flex-container {
+        gap:260px;
+    }
+    
+
+    h1 {
+        max-width:409px;
+        padding-bottom:32px;
+        font-size: 30px;
+        line-height: 42px;
+        font-weight: bold;
+        padding-top:50px;
+    }
+
+    .logo {
+        padding-top:167px;
+    }
+
+    button {
+        background-color: #A62120;
+        color:white;
+        text-decoration: none;
+        border:1px solid #fff;
+        padding-top:12px;
+        padding-bottom:13px;
+        border-radius: 20px;
+        width:174px;
+        height:47px;
+        font-size:16px;
+
+    }
+    
+    .text {
+       
+        margin-top:167px;
+    }
+
+    .logoNew {
+        padding-top:158px;
+        padding-bottom:200px;
+        text-align: center;
+        
+    }
+
+    #item {
+        
+        p {
+            color: #FFFFFF82;
+            font-weight: lighter;
+            padding-top:14px;
+
+        }
+    }
+    
+}
