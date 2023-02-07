@@ -134,23 +134,23 @@
   margin-right: 16px;
 }
 
-#hero3 {
+#course {
   height: 642px;
   background-color: #A62120;
 }
-#hero3 .text {
+#course .text {
   background-color: #A62120;
   height: 642px;
   width: 960px;
   padding-left: 117px;
 }
-#hero3 .text h1 {
+#course .text h1 {
   padding-top: 128px;
   padding-bottom: 29px;
   color: #fff;
   width: 231px;
 }
-#hero3 .text button {
+#course .text button {
   background-color: #fff;
   color: #252525;
   text-decoration: none;
@@ -162,39 +162,39 @@
   font-size: 16px;
   margin-top: 47px;
 }
-#hero3 .text ul {
+#course .text ul {
   width: 291px;
 }
-#hero3 .text ul li {
+#course .text ul li {
   color: #fff;
   line-height: 24px;
 }
-#hero3 .background {
+#course .background {
   height: 642px;
   width: 960px;
 }
 
-#hero4 {
+#products {
   background-color: #000;
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
-#hero4 h1 {
+#products h1 {
   color: #fff;
   padding-top: 119px;
   padding-bottom: 16px;
 }
-#hero4 h2 {
+#products h2 {
   color: #fff;
 }
-#hero4 p {
+#products p {
   color: #fff;
   padding-top: 65px;
   padding-bottom: 50px;
   width: 652px;
   margin: auto;
 }
-#hero4 button {
+#products button {
   background-color: #A62120;
   color: white;
   text-decoration: none;
@@ -206,36 +206,36 @@
   height: 47px;
   font-size: 16px;
 }
-#hero4 .pictures {
+#products .pictures {
   padding-left: 16px;
   padding-bottom: 227px;
 }
-#hero4 .logoNew {
+#products .logoNew {
   padding: 89px 0;
 }
 
-#hero5 {
+#spices {
   background-color: #A62120;
   height: 705px;
   font-family: "Roboto", sans-serif;
   color: #fff;
 }
-#hero5 .text {
+#spices .text {
   width: 50%;
   position: absolute;
   right: 0;
 }
-#hero5 .text h1 {
+#spices .text h1 {
   width: 432px;
 }
-#hero5 .text h2 {
+#spices .text h2 {
   width: 402px;
 }
-#hero5 .text p {
+#spices .text p {
   width: 431px;
 }
 
-#hero6 {
+#order {
   background-image: url("/pictures/background5.png");
   background-color: #000;
   height: 540px;
@@ -243,11 +243,11 @@
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
-#hero6 h1 {
+#order h1 {
   padding-top: 193px;
   padding-bottom: 40px;
 }
-#hero6 button {
+#order button {
   background-color: #fff;
   color: #252525;
   text-decoration: none;
@@ -260,15 +260,15 @@
   margin-top: 47px;
 }
 
-#hero7 {
+#aboutUs {
   background-color: #000;
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
-#hero7 .flex-container {
+#aboutUs .flex-container {
   gap: 260px;
 }
-#hero7 h1 {
+#aboutUs h1 {
   max-width: 409px;
   padding-bottom: 32px;
   font-size: 30px;
@@ -276,10 +276,10 @@
   font-weight: bold;
   padding-top: 50px;
 }
-#hero7 .logo {
+#aboutUs .logo {
   padding-top: 167px;
 }
-#hero7 button {
+#aboutUs button {
   background-color: #A62120;
   color: white;
   text-decoration: none;
@@ -291,15 +291,15 @@
   height: 47px;
   font-size: 16px;
 }
-#hero7 .text {
+#aboutUs .text {
   margin-top: 167px;
 }
-#hero7 .logoNew {
+#aboutUs .logoNew {
   padding-top: 158px;
   padding-bottom: 200px;
   text-align: center;
 }
-#hero7 #item p {
+#aboutUs #item p {
   color: rgba(255, 255, 255, 0.5098039216);
   font-weight: lighter;
   padding-top: 14px;
