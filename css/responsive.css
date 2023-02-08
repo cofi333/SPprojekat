@@ -1,5 +1,5 @@
 @media only screen and (max-width: 768px) {
-  .flex-container {
+  .flex-container, .flex-container2 {
     flex-wrap: wrap;
   }
 }

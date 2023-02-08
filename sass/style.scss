@@ -18,10 +18,7 @@
     display:flex;
 }
 
-.flex-container2 {
-    display:flex;
-    gap:100px;
-}
+
 
 #navigation {
     height:93px;
@@ -133,17 +130,20 @@
 
 #hero2 {
     background-color:#000;
-    height: 712px;
+    
     font-family: 'Roboto', sans-serif;
+    padding-top:114px;
+    padding-bottom:90px;
 
 
    .content {
         gap:125px;
         font-family: 'Roboto', sans-serif;
+        align-items: center;
+       
 
     h1 {
         color:#fff;
-        padding-top:160px;
         font-size:32px;
         
     }
@@ -163,8 +163,7 @@
     }
 
     #food1 {
-        padding-top:114px;
-        padding-bottom:15px;
+        
     }
 
 
