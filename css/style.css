@@ -8,6 +8,11 @@
   margin: 0 auto;
 }
 
+.second-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
 .flex-container {
   display: flex;
 }
@@ -28,11 +33,15 @@
   display: flex;
   justify-content: center;
   height: 93px;
+  align-items: center;
 }
 #navigation ul li {
   list-style: none;
-  padding-top: 40px;
-  padding-left: 41px;
+  padding: 0 20px;
+}
+#navigation ul li #downloadBtn {
+  align-items: center;
+  gap: 5px;
 }
 #navigation ul li a {
   text-decoration: none;
@@ -57,16 +66,22 @@
 #hero {
   height: 679px;
   background-image: url("/pictures/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
-#hero .text {
+#hero .text-background {
   width: 629px;
   height: 348px;
   background-color: rgba(0, 0, 0, 0.3019607843);
   position: absolute;
   top: 163px;
 }
-#hero .text h1 {
+#hero .text-background .text {
+  width: 275px;
+  margin-left: 300px;
+}
+#hero .text-background .text h1 {
   color: #fff;
   font-family: "Roboto", sans-serif;
   width: 242px;
@@ -74,7 +89,7 @@
   padding-top: 67px;
   padding-bottom: 15px;
 }
-#hero .text p {
+#hero .text-background .text p {
   color: #fff;
   font-weight: lighter;
   font-family: "Roboto", sans-serif;
@@ -85,6 +100,7 @@
 #hero2 {
   background-color: #000;
   height: 712px;
+  font-family: "Roboto", sans-serif;
 }
 #hero2 .content {
   gap: 125px;
@@ -105,6 +121,7 @@
   width: 429px;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 300;
 }
 #hero2 .content #food1 {
   padding-top: 114px;
@@ -135,22 +152,22 @@
 }
 
 #course {
-  height: 642px;
   background-color: #A62120;
 }
 #course .text {
   background-color: #A62120;
-  height: 642px;
-  width: 960px;
-  padding-left: 117px;
+  flex: 50%;
+  align-self: center;
 }
-#course .text h1 {
-  padding-top: 128px;
+#course .text .text-content {
+  width: 300px;
+}
+#course .text .text-content h1 {
   padding-bottom: 29px;
   color: #fff;
   width: 231px;
 }
-#course .text button {
+#course .text .text-content button {
   background-color: #fff;
   color: #252525;
   text-decoration: none;
@@ -162,16 +179,19 @@
   font-size: 16px;
   margin-top: 47px;
 }
-#course .text ul {
+#course .text .text-content ul {
   width: 291px;
 }
-#course .text ul li {
+#course .text .text-content ul li {
   color: #fff;
   line-height: 24px;
 }
-#course .background {
-  height: 642px;
-  width: 960px;
+#course .picture {
+  flex: 50%;
+}
+#course .picture img {
+  display: block;
+  width: 100%;
 }
 
 #products {
@@ -210,29 +230,45 @@
   padding-left: 16px;
   padding-bottom: 227px;
 }
-#products .logoNew {
-  padding: 89px 0;
+#products #logoNew {
+  display: block;
+  margin: 0 auto;
+  padding-top: 124px;
+  padding-bottom: 88px;
+  width: 100%;
 }
 
 #spices {
   background-color: #A62120;
-  height: 705px;
   font-family: "Roboto", sans-serif;
   color: #fff;
 }
+#spices .background {
+  flex: 50%;
+}
+#spices .background img {
+  display: block;
+  width: 100%;
+}
 #spices .text {
-  width: 50%;
-  position: absolute;
-  right: 0;
+  flex: 50%;
+  align-self: center;
+  padding-left: 125px;
 }
 #spices .text h1 {
   width: 432px;
+  padding-bottom: 8px;
+  font-size: 32px;
 }
 #spices .text h2 {
   width: 402px;
+  padding-bottom: 33px;
+  font-size: 22px;
 }
 #spices .text p {
   width: 431px;
+  font-weight: 300;
+  line-height: 24px;
 }
 
 #order {
@@ -266,10 +302,10 @@
   font-family: "Roboto", sans-serif;
 }
 #aboutUs .flex-container {
-  gap: 260px;
+  justify-content: center;
+  gap: 100px;
 }
 #aboutUs h1 {
-  max-width: 409px;
   padding-bottom: 32px;
   font-size: 30px;
   line-height: 42px;
@@ -294,13 +330,116 @@
 #aboutUs .text {
   margin-top: 167px;
 }
-#aboutUs .logoNew {
-  padding-top: 158px;
-  padding-bottom: 200px;
-  text-align: center;
+#aboutUs #logoNew {
+  display: block;
+  margin: 0 auto;
+  padding: 158px 0;
+  width: 100%;
+}
+#aboutUs #logoNew2 {
+  display: block;
+  margin: 0 auto;
+  padding-top: 140px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+#aboutUs #item img {
+  display: block;
+  margin: 0 auto;
 }
 #aboutUs #item p {
   color: rgba(255, 255, 255, 0.5098039216);
-  font-weight: lighter;
+  font-weight: 300;
   padding-top: 14px;
+  text-align: center;
+}
+#aboutUs .quotes .button {
+  text-align: center;
+  padding-bottom: 78px;
+}
+#aboutUs .quotes h3 {
+  text-align: center;
+  color: #FFFFFF;
+}
+#aboutUs .quotes h1 {
+  text-align: center;
+  font-size: 32px;
+  margin: 0 auto;
+}
+#aboutUs .quotes .quote {
+  background-color: #333333;
+  padding: 20px;
+  margin-bottom: 90px;
+  position: relative;
+}
+#aboutUs .quotes .quote img {
+  display: block;
+  margin: 0 auto;
+}
+#aboutUs .quotes .quote #stars-icon {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#aboutUs .quotes .quote p {
+  width: 342px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+#aboutUs .quotes .quote h5 {
+  text-align: center;
+  padding-top: 10px;
+}
+#aboutUs .quotes .quote #quote-icon {
+  position: absolute;
+  right: 10px;
+}
+
+footer {
+  font-family: "Roboto", sans-serif;
+}
+footer .pre-footer {
+  background-color: #B50014;
+}
+footer .pre-footer .flex-container {
+  justify-content: space-between;
+}
+footer .pre-footer .social-medias {
+  margin: auto 0;
+}
+footer .pre-footer .social-medias span {
+  color: #FFFFFF;
+  padding-top: 10px;
+}
+footer .pre-footer .social-medias .flex-container {
+  gap: 10px;
+}
+footer .pre-footer .informations {
+  color: #fff;
+  font-size: 16px;
+  margin: auto 0;
+}
+footer .pre-footer .informations .phone {
+  justify-content: unset;
+  gap: 10px;
+}
+footer .pre-footer .informations .mail {
+  justify-content: unset;
+  gap: 10px;
+}
+footer .pre-footer .informations .location {
+  gap: 10px;
+}
+footer .footer {
+  background-color: #66000B;
+}
+footer .footer .flex-container {
+  justify-content: space-between;
+}
+footer .footer span {
+  color: rgba(255, 255, 255, 0.5019607843);
+  padding: 5px 0;
+  font-size: 12px;
+}
+footer .footer span a {
+  color: rgba(255, 255, 255, 0.5019607843);
 }

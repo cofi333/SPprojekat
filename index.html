@@ -7,6 +7,8 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 <body>
    
@@ -25,7 +27,7 @@
                     <li><a href="#">Tagesessen</a></li>
                     <li><a href="#">Impressum</a></li>
                     <li><a href="#">Kontakt</a></li>
-                    <li><a href="#"><img src="./pictures/Frame.svg" alt="PDF logo">download</a></li>
+                    <li ><a href="#" class="flex-container" id="downloadBtn"><img src="./pictures/Frame.svg" alt="PDF logo">download</a></li>
                 </ul>
             </nav>
 
@@ -44,25 +46,26 @@
 
     <section id="hero">
   
-            <div class="text">
-           
+            <div class="text-background">
+                <div class="text">
                     <h1>Heiko Brath
-                    Metzgermeister</h1>
-                    <p>Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam Aperol Spritz probatus pertinax.</p>
-           
+                        Metzgermeister</h1>
+                        <p>Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam Aperol Spritz probatus pertinax.</p>
+                    </div>
             </div>
 
+           
         </section>
 
     <section id="hero2">
-        <div class="content container flex-container">
+        <div class="content second-container flex-container">
             <div class="text">
                  <h1>Dry aged</h1>  
                  <h2>Alte Wutz, Dry Aged</h2>
                  <p>Halt amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.
                     id latine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</p>
 
-                    <div class="buttons container">
+                    <div class="buttons flex-container">
                         <button id="leftBtn">Dry Aged</button>
                         <button>Alte Wurtz</button>
                     </div>       
@@ -86,10 +89,10 @@
 
         <section id="course">
 
-            <div class="flex-container container">
+            <div class="flex-container content">
               
                     <div class="text">
-                    
+                        <div class="text-content second-container">
                         <h1>Buchen Sie den 
                             Grillkurs jetzt</h1>
         
@@ -101,34 +104,36 @@
                         </ul>
         
                         <button>GrillKurs</button>
-                 
-                    
+                        </div>
                     </div>
-    
-                <div class="background">
-                    <img src="/pictures/background2.jpg" alt="Background">
-                </div>
 
+            
+            <div class="picture">
+                <img src="/pictures/background2.jpg" alt="Background">
             </div>
-               
-    
-        
+
+
+                    
+                    
+                    
+            </div>
         </section>
 
     
     <section id="products">
-        <div class="container">
+        <div class="second-container">
             <h1>Das Handwerk</h1>
             <h2>alles über unsere Hausgemachte Produkte</h2>
             <p>Halt amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna 99 Luftballons Ut enim ad minim veniam, Turnbeutel nostrud exercitation ullamco laboris nisi Sprechen Sie deutsch aliquip ex ea commodo consequat.
                 Wiener Schnitzel aute irure dolor in Guten Tag mollit anim Stuttgart.
                 id latine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior</p>
             <button>Das Handwerk</button>
+            <img src="/pictures/vonal 1.svg"  alt="Logo" id="logoNew">
         </div>
 
-        <div class="logoNew">
-            <img src="/pictures/vonal 1.svg"  alt="Logo">
-        </div>  
+        
+            
+        
 
         <div class="pictures">
             <img src="/pictures/food8.svg" alt="Food">
@@ -141,11 +146,11 @@
 
 
     <section id="spices">
-        <div class="container flex-container">
+        <div class="flex-container">
+
             <div class="background">
                 <img src="/pictures/background3.jpg" alt="Background">
             </div>
-
             <div class="text">
                 <h1>Custome spices for your meat</h1>
                 <h2>Turnbeutel nostrud exercitation ullamco 
@@ -171,7 +176,7 @@
 
 
     <section id="aboutUs">
-        <div class="container">
+        <div class="second-container">
             <div class="flex-container">
                 <div class="logo">
                     <img src="/pictures/geneussnetzlogo.png" alt="logo">
@@ -185,12 +190,12 @@
                 </div>
             </div>
 
-            <div class="logoNew">
-                <img src="/pictures/vonal 1.svg"  alt="Logo">
-            </div>
+            
+                <img src="/pictures/vonal 1.svg"  alt="Logo" id="logoNew">
+           
         </div>  
         
-        <div class="flex-container2 container">
+        <div class="flex-container2 second-container">
             <h1>Auszeichnungen</h1>
 
             <div id="item">
@@ -218,8 +223,104 @@
             </div>
         </div>
 
+        <div class="second-container">
+            <img src="/pictures/vonal 1.svg"  alt="Logo" id="logoNew2">
+        </div>
 
+        <div class="quotes">
+            <div class="second-container">
+                <h3>Empfehlungs</h3>
+                <h1>Was die Leute über uns sagen</h1>
+
+                <div class="flex-container">
+
+                    <div class="quote">
+                        <p>Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.</p>
+                    </div>
+
+                    <div class="quote">
+                 
+                        <img src="/pictures/Group.png" alt="Icon">
+                        <img src="/pictures/zvezdice.svg" alt="Stars" id="stars-icon">
+                   
+                        <p>Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna  Luftballons Ut Turnbeutel nostrud exercitation ullamco .</p>
+                        <h3>Halling Tobias</h3>
+                        <h5>Koch</h5>
+                        
+                        <img id="quote-icon" src="/pictures/znak.svg" alt="Icon">
+                    </div>
+
+                    <div class="quote">
+                        <p>Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</p>
+                    </div>
+
+                    
+                </div>
+                
+                <div class="button">
+                <button>Alle Berichte</button>
+            </div>
+                
+            </div>
+        </div>
 
     </section>
+
+
+    <footer>
+        <div class="pre-footer">
+            <div class="container flex-container">
+                <div class="informations">
+                    <div class="location flex-container">
+                      <img src="/pictures/location.png" alt="Icon">
+                        <span>Klauprechtstraße  25
+                            76137 Karlsruhe, Germany</span>
+                        
+                    </div>
+
+                    <div class="phone flex-container">
+                        <img src="/pictures/phone.png" alt="Icon">
+                        <span>
+                            +49 721 358060
+                            </span>
+                    </div>
+
+                    <div class="mail flex-container">
+                        <img src="/pictures/mail.png" alt="Icon">
+                        <span>
+                            info@partyservice-brath.de</span>
+                    </div>
+                    
+
+                    
+                </div>
+
+                <img src="/pictures/footer-logo.png" alt="Logo">
+               
+
+
+            <div class="social-medias">
+                <div class="flex-container">
+                    <span>Besuchen Sie uns auf:</span>
+                    <img src="/pictures/twitter.png" alt="Twitter Logo">
+                    <img src="/pictures/facebook.png" alt="Facebook Logo">
+                    <img src="/pictures/instagram.png" alt="Instagram Logo">
+                    <img src="/pictures/youtube.png" alt="Youtube Logo">
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="container flex-container">
+                <span>© 2020 by Metzgerei Heiko Brath  GmbH, Deutschland</span>
+                <span>Code and design by <a href="https://www.studiopresent.com/">StudioPresent</a></span>
+            </div>
+        </div>
+        
+
+    </footer>
 </body>
 </html>
