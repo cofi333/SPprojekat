@@ -115,7 +115,11 @@
   }
 }
 @media only screen and (max-width: 768px) {
+<<<<<<< HEAD
   .cards {
+=======
+  .flex-container, .flex-container2 {
+>>>>>>> 2f142c2ca4c857cf4b8c0f6a5dc0693afafa9137
     flex-wrap: wrap;
   }
   .slideshow-container .slideshow-items {

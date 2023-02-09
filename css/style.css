@@ -17,6 +17,7 @@
   display: flex;
 }
 
+<<<<<<< HEAD
 .flex-container2 {
   display: flex;
   gap: 15px;
@@ -26,6 +27,8 @@
   display: flex;
 }
 
+=======
+>>>>>>> 2f142c2ca4c857cf4b8c0f6a5dc0693afafa9137
 #navigation {
   height: 93px;
   background-color: #B50014;
@@ -151,15 +154,19 @@
 #hero2 {
   background-color: #000;
   font-family: "Roboto", sans-serif;
+<<<<<<< HEAD
+=======
+  padding-top: 114px;
+>>>>>>> 2f142c2ca4c857cf4b8c0f6a5dc0693afafa9137
   padding-bottom: 90px;
 }
 #hero2 .content {
   gap: 125px;
   font-family: "Roboto", sans-serif;
+  align-items: center;
 }
 #hero2 .content h1 {
   color: #fff;
-  padding-top: 160px;
   font-size: 32px;
 }
 #hero2 .content h2 {
@@ -173,10 +180,6 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
-}
-#hero2 .content #food1 {
-  padding-top: 114px;
-  padding-bottom: 15px;
 }
 #hero2 .content .pictures #food2 {
   padding-right: 17px;
