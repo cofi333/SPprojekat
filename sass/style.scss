@@ -4,6 +4,7 @@
     padding:0;
 }
 
+
 .container {
     max-width: 1320px;
     margin:0 auto;
@@ -20,12 +21,25 @@
 
 .flex-container2 {
     display:flex;
-    gap:100px;
+    gap:15px;
 }
+
+.flex-container3 {
+    display:flex;
+}
+
 
 #navigation {
     height:93px;
     background-color:#B50014;
+  
+
+
+    #hamburgerIcon {
+        display:none;
+        font-size:15px;
+     
+    }
 
    img {
         
@@ -87,11 +101,67 @@
 
 
 #hero {
-    height:679px;
-    background-image:url('/pictures/background.svg');
-    background-repeat: no-repeat;
-    background-size:cover;
+    
     position:relative;
+
+    .slideshow-container {
+        position:relative;
+        .mySlides {
+
+            display:none;
+            img {
+                display:block;
+                width:100%;
+            }
+        }
+
+        .slideshow-items {
+            position:absolute;
+            bottom:25px;
+            left:45%;
+        }
+
+        .dots {
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+                margin:7px 10px;
+
+                &:hover {
+                    background-color: #FF0000;
+                }
+              }    
+
+              .active {
+                    background-color: #FF0000;
+              }
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+          
+          @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+          }
+
+          .prev,.next {
+            cursor:pointer;
+
+            
+          }
+
+    }
+    
+    
 
     .text-background {
         width:629px;
@@ -133,9 +203,9 @@
 
 #hero2 {
     background-color:#000;
-    height: 712px;
     font-family: 'Roboto', sans-serif;
-
+    padding-bottom:90px;
+   
 
    .content {
         gap:125px;
@@ -209,7 +279,7 @@
 #course {
 
     
-   
+    display:none; //IZBRISATI POSLE
     background-color: #A62120;
    
 
@@ -219,20 +289,20 @@
         background-color: #A62120;
         flex:50%;
         align-self: center;
+        justify-content: center;
            
         
 
         .text-content {
-
+    
             width:300px;
-
+            margin:0 auto;
 
         h1 {
           
             padding-bottom:29px;
             color:#fff;
-            width:231px;
-            
+            font-size:32px;
         
 
         }
@@ -251,12 +321,14 @@
         }
 
         ul {
-            width:291px;
-          
-
+           
+            padding-left:20px;
             li {
                 color:#fff;
                 line-height: 24px;
+            }
+            a {
+                font-size:1em;
             }
 
         }
@@ -285,6 +357,7 @@
     background-color:#000;
     font-family: 'Roboto', sans-serif;
     text-align:center;
+    display:none; //IZBRISATI POSLE
 
     h1 {
         color:#fff;
@@ -339,7 +412,8 @@
     background-color: #A62120;
     font-family: 'Roboto', sans-serif;
     color:#fff;
-
+    display:none; //IZBRISATI POSLE
+   
     .background {
         flex:50%;
         
@@ -359,14 +433,14 @@
 
         h1 {
             
-            width:432px;
+           width:432px;
             padding-bottom:8px;
             font-size:32px;
 
         }
 
         h2 {
-            width:402px;
+           width:402px;
             padding-bottom:33px;
             font-size:22px;
         }
@@ -387,7 +461,7 @@
     background-image: url('/pictures/background5.png');
     background-color: #000;
     height:540px;
-    
+    display:none; //IZBRISATI POSLE
     color:#fff;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -419,12 +493,13 @@
     background-color: #000;
     color:#fff;
     font-family: 'Roboto', sans-serif;
+    display:none; //IZBRISATI POSLE
 
-    .flex-container {
-        justify-content: center;
-        gap:100px;
-    }
+  
     
+   .flex-container2 {
+    justify-content: center;
+   }
 
     h1 {
         
@@ -437,6 +512,9 @@
 
     .logo {
         padding-top:167px;
+        flex:50%;
+        padding-left:25px;
+        
     }
 
     button {
@@ -455,6 +533,7 @@
     
     .text {
         margin-top:167px;
+        flex:50%;
     }
 
     #logoNew {
@@ -474,7 +553,7 @@
     }
 
     #item {
-        
+        width:200px;
 
         img {
             display:block;
@@ -493,6 +572,13 @@
     }
 
     .quotes {
+
+        .cards {
+            display:flex;
+            gap:15px;
+            
+            
+        }
 
         .button {
             text-align: center;
@@ -515,7 +601,7 @@
             padding:20px;
             margin-bottom:90px;
             position:relative;
-            
+          
 
            img {
             display:block;
@@ -544,17 +630,21 @@
            }
         }
     }
+
+    .awards {
+        justify-content: center;
+    }
     
 }
 
 
 footer {
     font-family: 'Roboto', sans-serif;
-
+    display:none; //IZBRISATI POSLE
     .pre-footer {
         background-color:#B50014;
 
-        .flex-container {
+        .flex-container3 {
             justify-content: space-between;
         }
 

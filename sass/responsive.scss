@@ -1,7 +1,302 @@
-@media only screen and (max-width: 768px) {
 
-    .flex-container {
-        flex-wrap: wrap;
+@media only screen and (max-width:1470px) {
+    #hero {
+        .text-background {
+            top:80px;
+            }
+        }
+}
+
+
+
+@media only screen and (max-width: 1310px) {
+
+    .container {
+        max-width:1200px;
     }
+
+    #navigation {
+        ul {
+            li {
+                padding-left:10px;
+            }
+        }
+
+        #logo{
+            width:140px;
+        }
+    }
+
+    #hero {
+        .text-background {
+            top:60px;
+            }
+        }
+}
+
+@media only screen and (max-width:1165px) {
+
+    .container,.second-container {
+        max-width:1000px;
+    }
+
+   
+
+    #navigation {
+        ul {
+            li {
+                padding-left:0;
+
+                a {
+                    font-size:14px;
+                }
+            }
+        }
+
+        #logo {
+            width:130px;
+        }
+    }
+
+    #hero2 {
+        
+        #food1 {
+            width:437px;
+        }
+
+        #food2,#food3,#food4 {
+            width:130px;
+        }
+
+        .content {
+            gap:50px;
+            h1 {
+                padding-top:110px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:999px) {
+
+    .container,.second-container {
+        max-width:850px;
+    }
+
+    #hero {
+        .text-background {
+            position:unset;
+            background-color:#000;
+            width:100%;
+            .text {
+               text-align: center;
+                margin:0 auto;
+
+                h1,p {
+                    width:auto;
+                }
+            }
+        }
+    }
+
+    #navigation {
+       
+    
+        #hamburgerIcon {
+            display:block;
+            font-size:45px;
+            color:#fff; 
+            margin-top:25px;
+    
+        }
+
+        .flex-container {
+            justify-content: space-between;
+        }
+
+        #navigationElements {
+            display:none;
+            width:50%;
+            height:100%;
+            background-color: #B50014;
+            position:absolute;
+            top:90px;
+            right:0;
+            z-index:200;
+            text-align: center;
+            
+            li {
+                padding:25px;
+
+                #downloadBtn {
+                    justify-content: center;
+                    
+                }
+            }
+
+            
+        } 
+
+        #logo{
+            width:178px;
+        }
+    
+    }
+
+    #hero2 {
+
+        .flex-container,.flex-container2 {
+            flex-wrap: wrap;
+        }
+        .content {
+            justify-content: center;
+            padding:50px 0;
+
+            .text {
+                order:2;
+                text-align: center;
+            h1 {
+                padding:0;
+            }
+
+            .buttons {
+
+                justify-content: center;
+
+            }
+
+        }
+
+            #food1 {
+                padding:0;
+            }
+
+
+        }
+    }
+ 
+ 
+        
     
 }
+
+@media only screen and (max-width: 850px) {
+    .container,.second-container {
+        max-width:750px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    
+
+        .slideshow-container .slideshow-items {
+            left:37%;
+        }
+
+
+    }
+
+    
+        
+    #course {
+        .flex-container {
+            flex-direction: column;
+        }
+
+        .text {
+            padding:150px 0;
+            margin:0 auto;
+           
+            .text-content {
+                text-align: center;
+            }
+            
+        } 
+    }
+
+    #spices {
+        .text {
+            order:1;
+            padding:100px 165px;
+            text-align: center;
+            
+            h1,h2,p {
+                width:unset;
+            }
+            }
+
+        
+
+        .background {
+            order:2;
+        }
+    }
+
+    #order {
+         background-position:center;
+    }
+
+    #aboutUs {
+        .flex-container {
+            gap:10px;
+            flex-direction: row;
+        }
+        .logo {
+            padding-left:0;
+            
+
+            img {
+             display:block;
+             margin:0 auto;
+              
+            }
+        }
+
+        .text {
+            margin-top:0;
+            text-align: center;
+        }
+
+        #logoNew,#logoNew2 {
+            padding:50px 0;
+        }
+
+        .flex-container2 {
+            
+            flex-wrap: wrap;
+            gap:35px;
+
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+
+    footer {
+        .pre-footer {
+            .flex-container3 {
+               display:flex;
+               flex-direction: column;
+               align-items: center; 
+            }
+
+            #footer-logo {
+                width:25%;
+            }
+
+            .informations,.social-medias {
+                padding:50px 0;
+            }
+        }
+    }
+
+

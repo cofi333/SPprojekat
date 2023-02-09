@@ -19,12 +19,20 @@
 
 .flex-container2 {
   display: flex;
-  gap: 100px;
+  gap: 15px;
+}
+
+.flex-container3 {
+  display: flex;
 }
 
 #navigation {
   height: 93px;
   background-color: #B50014;
+}
+#navigation #hamburgerIcon {
+  display: none;
+  font-size: 15px;
 }
 #navigation img {
   z-index: 100;
@@ -64,11 +72,54 @@
 }
 
 #hero {
-  height: 679px;
-  background-image: url("/pictures/background.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
+}
+#hero .slideshow-container {
+  position: relative;
+}
+#hero .slideshow-container .mySlides {
+  display: none;
+}
+#hero .slideshow-container .mySlides img {
+  display: block;
+  width: 100%;
+}
+#hero .slideshow-container .slideshow-items {
+  position: absolute;
+  bottom: 25px;
+  left: 45%;
+}
+#hero .slideshow-container .dots .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin: 7px 10px;
+}
+#hero .slideshow-container .dots .dot:hover {
+  background-color: #FF0000;
+}
+#hero .slideshow-container .dots .active {
+  background-color: #FF0000;
+}
+#hero .slideshow-container .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#hero .slideshow-container .prev, #hero .slideshow-container .next {
+  cursor: pointer;
 }
 #hero .text-background {
   width: 629px;
@@ -99,8 +150,8 @@
 
 #hero2 {
   background-color: #000;
-  height: 712px;
   font-family: "Roboto", sans-serif;
+  padding-bottom: 90px;
 }
 #hero2 .content {
   gap: 125px;
@@ -152,20 +203,23 @@
 }
 
 #course {
+  display: none;
   background-color: #A62120;
 }
 #course .text {
   background-color: #A62120;
   flex: 50%;
   align-self: center;
+  justify-content: center;
 }
 #course .text .text-content {
   width: 300px;
+  margin: 0 auto;
 }
 #course .text .text-content h1 {
   padding-bottom: 29px;
   color: #fff;
-  width: 231px;
+  font-size: 32px;
 }
 #course .text .text-content button {
   background-color: #fff;
@@ -180,11 +234,14 @@
   margin-top: 47px;
 }
 #course .text .text-content ul {
-  width: 291px;
+  padding-left: 20px;
 }
 #course .text .text-content ul li {
   color: #fff;
   line-height: 24px;
+}
+#course .text .text-content ul a {
+  font-size: 1em;
 }
 #course .picture {
   flex: 50%;
@@ -198,6 +255,7 @@
   background-color: #000;
   font-family: "Roboto", sans-serif;
   text-align: center;
+  display: none;
 }
 #products h1 {
   color: #fff;
@@ -242,6 +300,7 @@
   background-color: #A62120;
   font-family: "Roboto", sans-serif;
   color: #fff;
+  display: none;
 }
 #spices .background {
   flex: 50%;
@@ -275,6 +334,7 @@
   background-image: url("/pictures/background5.png");
   background-color: #000;
   height: 540px;
+  display: none;
   color: #fff;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -300,10 +360,10 @@
   background-color: #000;
   color: #fff;
   font-family: "Roboto", sans-serif;
+  display: none;
 }
-#aboutUs .flex-container {
+#aboutUs .flex-container2 {
   justify-content: center;
-  gap: 100px;
 }
 #aboutUs h1 {
   padding-bottom: 32px;
@@ -314,6 +374,8 @@
 }
 #aboutUs .logo {
   padding-top: 167px;
+  flex: 50%;
+  padding-left: 25px;
 }
 #aboutUs button {
   background-color: #A62120;
@@ -329,6 +391,7 @@
 }
 #aboutUs .text {
   margin-top: 167px;
+  flex: 50%;
 }
 #aboutUs #logoNew {
   display: block;
@@ -343,6 +406,9 @@
   padding-bottom: 50px;
   width: 100%;
 }
+#aboutUs #item {
+  width: 200px;
+}
 #aboutUs #item img {
   display: block;
   margin: 0 auto;
@@ -352,6 +418,10 @@
   font-weight: 300;
   padding-top: 14px;
   text-align: center;
+}
+#aboutUs .quotes .cards {
+  display: flex;
+  gap: 15px;
 }
 #aboutUs .quotes .button {
   text-align: center;
@@ -393,14 +463,18 @@
   position: absolute;
   right: 10px;
 }
+#aboutUs .awards {
+  justify-content: center;
+}
 
 footer {
   font-family: "Roboto", sans-serif;
+  display: none;
 }
 footer .pre-footer {
   background-color: #B50014;
 }
-footer .pre-footer .flex-container {
+footer .pre-footer .flex-container3 {
   justify-content: space-between;
 }
 footer .pre-footer .social-medias {

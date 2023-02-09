@@ -9,16 +9,20 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+    <script src="/script/slider.js"></script>
+    <script src="/script/hamburgerMenu.js"></script>
+    <script src="https://kit.fontawesome.com/ac55437ec8.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
    
     <header id="navigation">
         <div class="container flex-container">
             
-                <img src="./pictures/logo.svg" alt="Logo">
+                <img src="./pictures/logo.svg" alt="Logo" id="logo">
             
             <nav>
-                <ul>
+                <ul id="navigationElements">
                     <li><a href="#">Die Metzgerei</a></li>
                     <li><a href="#">Dry Aged</a></li>
                     <li><a href="#">Fleischversand</a></li>
@@ -31,6 +35,8 @@
                 </ul>
             </nav>
 
+            <a onclick="myFunction()"><i class="fa-solid fa-bars" id="hamburgerIcon"></i></a>
+           
         </div>
     </header>
 
@@ -45,6 +51,34 @@
 
 
     <section id="hero">
+
+            <div class="slideshow-container">
+                <div class="mySlides fade" style="display:block">
+                    <img src="/pictures/background.svg" alt="Background 1">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="/pictures/background2slider.jpg" alt="Background 2">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="/pictures/background3slider.jpg" alt="Background 3">
+                </div>
+
+            <div class="slideshow-items flex-container">
+                <a class="prev" onclick="plusSlides(-1)"><img src="/pictures/leftarrow.png" alt="Left Arrow"></a>
+                <div class="dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                <a class="next" onclick="plusSlides(1)"><img src="/pictures/rightarrow.png" alt="Right Arrow"></a>
+            </div>
+            </div>
+            
+            </div>
+
+            
+
   
             <div class="text-background">
                 <div class="text">
@@ -73,13 +107,16 @@
 
 
             <div class="picture">
+                <div class="pictures">
+                    <div class="top">
                 <img src="pictures/food1.svg" id="food1" alt="Food">  
-                
+            </div>
                 <div class="pictures flex-container">
                     <img src="pictures/food2.png" id="food2" alt="Food">
                     <img src="pictures/food3.svg" id="food3" alt="Food">
                     <img src="pictures/food4.svg" id="food4" alt="Food">
                 </div>
+            </div>
             </div>
         </div>
 
@@ -92,7 +129,7 @@
             <div class="flex-container content">
               
                     <div class="text">
-                        <div class="text-content second-container">
+                        <div class="text-content ">
                         <h1>Buchen Sie den 
                             Grillkurs jetzt</h1>
         
@@ -195,8 +232,14 @@
            
         </div>  
         
+
+    <div class="flex-container awards second-container">
+
+        <h1>Auszeichnungen</h1>
+
         <div class="flex-container2 second-container">
-            <h1>Auszeichnungen</h1>
+            
+           
 
             <div id="item">
                 <img src="/pictures/nagrada1.svg" alt="Item">
@@ -222,6 +265,7 @@
                     ullum gloriatur.</p>
             </div>
         </div>
+    </div>
 
         <div class="second-container">
             <img src="/pictures/vonal 1.svg"  alt="Logo" id="logoNew2">
@@ -232,7 +276,7 @@
                 <h3>Empfehlungs</h3>
                 <h1>Was die Leute über uns sagen</h1>
 
-                <div class="flex-container">
+                <div class="cards">
 
                     <div class="quote">
                         <p>Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.</p>
@@ -269,7 +313,7 @@
 
     <footer>
         <div class="pre-footer">
-            <div class="container flex-container">
+            <div class="container flex-container3">
                 <div class="informations">
                     <div class="location flex-container">
                       <img src="/pictures/location.png" alt="Icon">
@@ -295,7 +339,7 @@
                     
                 </div>
 
-                <img src="/pictures/footer-logo.png" alt="Logo">
+                <img src="/pictures/footer-logo.png" alt="Logo" id="footer-logo">
                
 
 
