@@ -1,0 +1,25 @@
+#order {
+  background-image: url("/pictures/background5.png");
+  background-color: #000;
+  background-position: center;
+  height: 540px;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+#order h1 {
+  padding-top: 193px;
+  padding-bottom: 40px;
+}
+#order button {
+  background-color: #fff;
+  color: #252525;
+  text-decoration: none;
+  border: 1px solid #FF0000;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  border-radius: 20px;
+  width: 174px;
+  font-size: 16px;
+  margin-top: 47px;
+}

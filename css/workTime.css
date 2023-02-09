@@ -1,0 +1,32 @@
+#workTime {
+  height: 30px;
+  background-color: #252525;
+  color: #fff;
+  text-align: right;
+}
+#workTime .content {
+  padding-top: 6px;
+  font-family: "Roboto", sans-serif;
+  margin-right: 10px;
+}
+#workTime .content span {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  #workTime {
+    padding-left: 120px;
+  }
+  #workTime .content span {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #workTime {
+    padding-left: 115px;
+    height: 50px;
+  }
+  #workTime .content {
+    padding-top: 6px;
+  }
+}

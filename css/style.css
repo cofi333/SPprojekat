@@ -57,6 +57,86 @@
   font-family: "Roboto", sans-serif;
 }
 
+@media only screen and (max-width: 1310px) {
+  .container {
+    max-width: 999px;
+  }
+  #navigation ul li {
+    padding-left: 0;
+    text-align: center;
+  }
+  #navigation ul li a {
+    font-size: 14px;
+  }
+  #navigation #logo {
+    width: 140px;
+  }
+}
+@media only screen and (max-width: 999px) {
+  #navigation #hamburgerIcon {
+    display: block;
+    font-size: 45px;
+    color: #fff;
+    margin-top: 25px;
+    margin-right: 10px;
+  }
+  #navigation .flex-container {
+    justify-content: space-between;
+  }
+  #navigation #navigationElements {
+    display: none;
+    width: 50%;
+    height: 100%;
+    background-color: #B50014;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    z-index: 200;
+    text-align: center;
+  }
+  #navigation #navigationElements li {
+    padding: 25px;
+  }
+  #navigation #navigationElements li #downloadBtn {
+    justify-content: center;
+  }
+  #navigation #logo {
+    width: 178px;
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #navigation {
+    height: 70px;
+  }
+  #navigation #hamburgerIcon {
+    font-size: 35px;
+    margin-top: 16px;
+  }
+  #navigation #logo {
+    width: 140px;
+  }
+  #navigation #navigationElements {
+    top: 70px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #navigation {
+    height: 55px;
+  }
+  #navigation #hamburgerIcon {
+    margin-top: 14px;
+    font-size: 25px;
+  }
+  #navigation #logo {
+    width: 100px;
+    z-index: 201;
+  }
+  #navigation #navigationElements {
+    top: 54px;
+    width: 100%;
+  }
+}
 #workTime {
   height: 30px;
   background-color: #252525;
@@ -66,11 +146,29 @@
 #workTime .content {
   padding-top: 6px;
   font-family: "Roboto", sans-serif;
+  margin-right: 10px;
 }
 #workTime .content span {
   font-size: 14px;
 }
 
+@media only screen and (max-width: 768px) {
+  #workTime {
+    padding-left: 120px;
+  }
+  #workTime .content span {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #workTime {
+    padding-left: 115px;
+    height: 50px;
+  }
+  #workTime .content {
+    padding-top: 6px;
+  }
+}
 #hero {
   position: relative;
 }
@@ -148,6 +246,64 @@
   width: 275px;
 }
 
+@media only screen and (max-width: 1450px) {
+  #hero .text-background {
+    top: 70px;
+    width: 470px;
+  }
+  #hero .text-background .text {
+    margin-left: 165px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #hero .text-background {
+    top: 0;
+    height: 100%;
+    width: 420px;
+  }
+  #hero .text-background .text {
+    margin-left: 110px;
+  }
+}
+@media only screen and (max-width: 999px) {
+  #hero .text-background {
+    position: unset;
+    width: 100%;
+    background-color: #000;
+  }
+  #hero .text-background .text {
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+  #hero .text-background .text h1 {
+    padding-top: 35px;
+  }
+  #hero .slideshow-container .slideshow-items {
+    left: 39%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #hero .slideshow-container .slideshow-items {
+    left: 36%;
+    bottom: 7px;
+  }
+  #hero .text-background .text {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #hero .slideshow-container .slideshow-items {
+    display: none;
+  }
+  #hero .text-background .text h1 {
+    font-size: 17px;
+    padding-top: 15px;
+  }
+  #hero .text-background .text p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
 #hero2 {
   background-color: #000;
   font-family: "Roboto", sans-serif;
@@ -157,16 +313,20 @@
   gap: 125px;
   font-family: "Roboto", sans-serif;
   align-items: center;
+  padding-top: 100px;
 }
-#hero2 .content h1 {
+#hero2 .content .text {
+  flex: 50%;
+}
+#hero2 .content .text h1 {
   color: #fff;
   font-size: 32px;
 }
-#hero2 .content h2 {
+#hero2 .content .text h2 {
   color: #fff;
   font-size: 22px;
 }
-#hero2 .content p {
+#hero2 .content .text p {
   color: #fff;
   padding-top: 41px;
   width: 429px;
@@ -174,17 +334,11 @@
   line-height: 24px;
   font-weight: 300;
 }
-#hero2 .content .pictures #food2 {
-  padding-right: 17px;
-}
-#hero2 .content .pictures #food4 {
-  padding-left: 18px;
-}
-#hero2 .buttons {
+#hero2 .content .text .buttons {
   margin-top: 66px;
   text-align: center;
 }
-#hero2 .buttons button {
+#hero2 .content .text .buttons button {
   background-color: #A62120;
   color: white;
   text-decoration: none;
@@ -194,12 +348,97 @@
   border-radius: 20px;
   width: 174px;
 }
-#hero2 .buttons #leftBtn {
+#hero2 .content .text .buttons #leftBtn {
   margin-right: 16px;
 }
+#hero2 .content .pictures {
+  flex: 50%;
+}
+#hero2 .content .pictures #food2 {
+  padding-right: 17px;
+}
+#hero2 .content .pictures #food4 {
+  padding-left: 18px;
+}
 
+@media only screen and (max-width: 1310px) {
+  .second-container {
+    width: 999px;
+  }
+  #hero2 .content {
+    gap: 15px;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .second-container {
+    width: 768px;
+  }
+  #hero2 .content {
+    padding-top: 40px;
+    flex-direction: column;
+    gap: 50px;
+  }
+  #hero2 .content .text {
+    text-align: center;
+    order: 2;
+  }
+  #hero2 .content .text .buttons {
+    justify-content: center;
+  }
+  #hero2 .content .pictures {
+    order: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .second-container {
+    max-width: 576px;
+  }
+  #hero2 .content .pictures #food1 {
+    width: 396px;
+  }
+  #hero2 .content .pictures #food2, #hero2 .content .pictures #food3, #hero2 .content .pictures #food4 {
+    width: 120px;
+  }
+  #hero2 .content .text p {
+    font-size: 14px;
+  }
+  #hero2 .content .text h2 {
+    font-size: 18px;
+  }
+  #hero2 .content .text h1 {
+    font-size: 27px;
+  }
+  #hero2 .content .text .buttons {
+    margin-top: 45px;
+  }
+  #hero2 .content .text .buttons button {
+    width: 145px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .second-container {
+    max-width: 320px;
+  }
+  #hero2 .content {
+    padding-top: 5px;
+  }
+  #hero2 .content .pictures #food1 {
+    width: 310px;
+  }
+  #hero2 .content .pictures #food2, #hero2 .content .pictures #food3, #hero2 .content .pictures #food4 {
+    width: 90px;
+  }
+  #hero2 .content .text p {
+    width: unset;
+  }
+  #hero2 .content .text .buttons {
+    margin-top: 35px;
+  }
+  #hero2 .content .text .buttons button {
+    width: 120px;
+  }
+}
 #course {
-  display: none;
   background-color: #A62120;
 }
 #course .text {
@@ -247,11 +486,33 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 999px) {
+  #course .content {
+    flex-direction: column;
+  }
+  #course .content .text .text-content {
+    margin: 150px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #course .content .text .text-content {
+    margin: 100px 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #course .content .text .text-content {
+    margin: 40px 0;
+    width: unset;
+    text-align: center;
+  }
+  #course .content .text .text-content ul li {
+    list-style: none;
+  }
+}
 #products {
   background-color: #000;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  display: none;
 }
 #products h1 {
   color: #fff;
@@ -292,11 +553,35 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  #products p {
+    max-width: 320px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #products h1 {
+    padding-top: 45px;
+  }
+  #products p {
+    padding-top: 45px;
+  }
+  #products button {
+    width: 130px;
+  }
+  #products .pictures {
+    padding-left: 0;
+  }
+  #products .pictures img {
+    width: 200px;
+  }
+  #products #logoNew {
+    padding: 50px 0;
+  }
+}
 #spices {
   background-color: #A62120;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  display: none;
 }
 #spices .background {
   flex: 50%;
@@ -326,11 +611,45 @@
   line-height: 24px;
 }
 
+@media only screen and (max-width: 1350px) {
+  #spices .content .text {
+    padding-left: 35px;
+  }
+}
+@media only screen and (max-width: 999px) {
+  #spices .content {
+    flex-direction: column;
+  }
+  #spices .content .background {
+    order: 2;
+  }
+  #spices .content .text {
+    order: 1;
+    padding: 150px 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #spices .content .text {
+    padding: 55px 0;
+    text-align: center;
+  }
+  #spices .content .text h1 {
+    width: unset;
+    font-size: 28px;
+  }
+  #spices .content .text h2 {
+    font-size: 16px;
+    width: unset;
+  }
+  #spices .content .text p {
+    width: unset;
+  }
+}
 #order {
   background-image: url("/pictures/background5.png");
   background-color: #000;
+  background-position: center;
   height: 540px;
-  display: none;
   color: #fff;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -356,7 +675,6 @@
   background-color: #000;
   color: #fff;
   font-family: "Roboto", sans-serif;
-  display: none;
 }
 #aboutUs .flex-container2 {
   justify-content: center;
@@ -465,7 +783,6 @@
 
 footer {
   font-family: "Roboto", sans-serif;
-  display: none;
 }
 footer .pre-footer {
   background-color: #B50014;
@@ -512,4 +829,32 @@ footer .footer span {
 }
 footer .footer span a {
   color: rgba(255, 255, 255, 0.5019607843);
+}
+
+@media only screen and (max-width: 999px) {
+  footer .pre-footer {
+    padding: 50px 0;
+  }
+  footer .pre-footer .flex-container3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  footer .pre-footer .flex-container3 {
+    gap: 15px;
+  }
+  footer .pre-footer .informations {
+    font-size: 13px;
+  }
+  footer .pre-footer .social-medias img {
+    width: 35px;
+  }
+  footer .pre-footer .social-medias .flex-container {
+    gap: 3px;
+  }
+  footer .footer span {
+    padding: 5px 15px;
+  }
 }

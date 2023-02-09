@@ -1,0 +1,124 @@
+#course {
+
+
+    background-color: #A62120;
+   
+
+    .text {
+        
+        
+        background-color: #A62120;
+        flex:50%;
+        align-self: center;
+        justify-content: center;
+           
+        
+
+        .text-content {
+    
+            width:300px;
+            margin:0 auto;
+
+        h1 {
+          
+            padding-bottom:29px;
+            color:#fff;
+            font-size:32px;
+        
+
+        }
+
+        button {
+            background-color: #fff;
+            color:#252525;
+            text-decoration: none;
+            border:1px solid #FF0000;
+            padding-top:12px;
+            padding-bottom:13px;
+            border-radius: 20px;
+            width:174px;
+            font-size:16px;
+            margin-top:47px;
+        }
+
+        ul {
+           
+            padding-left:20px;
+            li {
+                color:#fff;
+                line-height: 24px;
+            }
+            a {
+                font-size:1em;
+            }
+
+        }
+        }
+
+
+    }
+
+    .picture {
+        flex:50%;
+
+        img {
+            display:block;
+            width:100%;
+            
+        }
+    }
+
+
+   
+}
+
+
+//RESPONSIVE DESIGN
+
+@media only screen and (max-width:999px) {
+    #course {
+        .content {
+            flex-direction: column;
+
+
+            .text {
+                .text-content {
+                    margin:150px 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #course {
+        .content {
+            .text {
+                .text-content {
+                    margin:100px 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #course {
+        .content {
+            .text {
+                .text-content {
+                    margin:40px 0;
+                    width:unset;
+                    text-align: center;
+
+                    ul {
+                        li {
+                            list-style: none;
+                        }
+                    }
+                
+                }
+            }
+        }
+    }
+}

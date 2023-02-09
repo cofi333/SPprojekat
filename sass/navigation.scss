@@ -1,0 +1,170 @@
+
+#navigation {
+    height:93px;
+    background-color:#B50014;
+  
+
+
+    #hamburgerIcon {
+        display:none;
+        font-size:15px;
+     
+    }
+
+   img {
+        
+        z-index: 100;
+
+    }
+   
+        
+    ul {
+        display:flex;
+        justify-content: center;
+        height:93px;
+        align-items: center;
+      
+        li {
+            list-style: none;
+            padding:0 20px;
+            
+            
+            #downloadBtn {
+                align-items: center;
+                gap:5px;
+
+            }
+            
+        
+
+            a {
+                text-decoration: none;
+                color:#FFFFFF;
+                font-family: 'Roboto', sans-serif;
+                
+                
+            
+            }
+        }
+    
+}
+}
+
+//RESPONSIVE DESIGN
+
+@media only screen and (max-width:1310px) {
+
+    .container {
+        max-width:999px;
+    }
+
+    #navigation {
+        ul {
+            
+            li {
+                padding-left:0;
+                text-align: center;
+
+                a {
+                    font-size:14px;
+                    
+                }
+            }
+        }
+
+        #logo{
+            width:140px;
+        }
+    }
+}
+
+@media only screen and (max-width:999px) {
+
+    #navigation {
+       
+    
+        #hamburgerIcon {
+            display:block;
+            font-size:45px;
+            color:#fff; 
+            margin-top:25px;
+            margin-right:10px;
+    
+        }
+
+        .flex-container {
+            justify-content: space-between;
+        }
+
+        #navigationElements {
+            display:none;
+            width:50%;
+            height:100%;
+            background-color: #B50014;
+            position:absolute;
+            top:90px;
+            right:0;
+            z-index:200;
+            text-align: center;
+            
+            li {
+                padding:25px;
+
+                #downloadBtn {
+                    justify-content: center;
+                    
+                }
+            }
+
+            
+        } 
+
+        #logo{
+            width:178px;
+            margin-left:10px;
+        }
+    
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #navigation {
+        height:70px;
+
+        #hamburgerIcon {
+            font-size:35px;
+            margin-top:16px;
+        }
+
+        #logo {
+            width:140px;
+        }
+
+        #navigationElements {
+            top:70px;
+        }
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #navigation {
+        height:55px;
+
+        #hamburgerIcon {
+            margin-top:14px;
+            font-size:25px;
+        }
+
+        #logo {
+            width:100px;
+            z-index: 201;
+        }
+
+        #navigationElements {
+            top:54px;
+            width:100%;
+        }
+    }
+}
+
+

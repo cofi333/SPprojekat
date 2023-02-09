@@ -1,0 +1,127 @@
+footer {
+    font-family: 'Roboto', sans-serif;
+    .pre-footer {
+        background-color:#B50014;
+
+        .flex-container3 {
+            justify-content: space-between;
+        }
+
+
+        .social-medias {
+            
+            margin:auto 0;
+
+            span {
+                color:#FFFFFF;
+                padding-top:10px;
+                
+            }
+
+            
+
+            .flex-container {
+                gap:10px;
+            }
+        }
+
+        .informations {
+            color:#fff;
+            font-size:16px;
+            margin:auto 0;
+            
+
+            .phone{
+                justify-content: unset;
+                gap:10px;
+                
+            }
+
+            .mail {
+                justify-content: unset;
+                gap:10px;
+            }
+           
+            .location {
+                gap:10px;
+
+            }
+        }
+
+        
+        
+          
+        }
+    
+
+    .footer {
+        background-color:#66000B;
+        
+        .flex-container {
+            justify-content: space-between;
+        }
+
+        span {
+            color:#FFFFFF80;
+            padding:5px 0;
+            font-size:12px;
+
+            a {
+                color:#FFFFFF80;
+            }
+            
+        }
+    }
+}
+
+
+//RESPONSIVE DESIGN
+
+@media only screen and (max-width:999px) {
+    footer {
+        .pre-footer {
+            padding:50px 0;
+            .flex-container3 {
+                flex-direction: column;
+                align-items: center;
+                gap:50px;
+            }
+    
+            
+        }
+    }
+}
+
+@media only screen and (max-width:576px) {
+    footer {
+
+       
+            .pre-footer {
+
+                .flex-container3 {
+                    gap:15px;
+                }
+
+                .informations {
+                    font-size:13px;
+                }
+
+
+                .social-medias {
+                    img {
+                        width:35px;
+                    }
+                    .flex-container {
+                        gap:3px;
+                    }
+                }
+              
+            }
+
+            .footer {
+                span {
+                    padding:5px 15px;
+                }
+            }
+        }
+}

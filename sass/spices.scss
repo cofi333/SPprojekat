@@ -1,0 +1,102 @@
+#spices {
+
+    background-color: #A62120;
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+   
+    .background {
+        flex:50%;
+        
+        img {
+            display:block;
+            width:100%;
+            
+        }
+    }
+
+    .text {
+        
+        flex:50%;
+        align-self: center;
+        padding-left:125px;
+
+
+        h1 {
+            
+           width:432px;
+            padding-bottom:8px;
+            font-size:32px;
+
+        }
+
+        h2 {
+           width:402px;
+            padding-bottom:33px;
+            font-size:22px;
+        }
+
+        p {
+            width:431px;
+            font-weight: 300;
+            line-height: 24px;
+
+        }
+
+
+    }
+}
+
+@media only screen and (max-width:1350px) {
+    #spices {
+        .content {
+            .text {
+                padding-left:35px;
+               
+
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:999px) {
+    #spices {
+        .content {
+            flex-direction: column;
+
+            .background {
+                order:2;
+            }
+
+            .text {
+                order:1;
+                padding:150px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #spices {
+        .content {
+         
+            .text {
+                padding:55px 0;
+                text-align: center;
+                h1 {
+                    width:unset;
+                    font-size: 28px;
+                }
+
+                h2 {
+                    font-size:16px;
+                    width:unset;
+                }
+
+                p {
+                    width:unset;
+                }
+            }
+        }
+    }
+}

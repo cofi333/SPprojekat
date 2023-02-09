@@ -1,0 +1,201 @@
+#hero2 {
+    background-color:#000;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom:90px;
+
+  
+   .content {
+        gap:125px;
+        font-family: 'Roboto', sans-serif;
+        align-items: center;
+        padding-top:100px;
+    
+  //TEXT SECTION - LEFT SIDE
+        
+    .text {
+        flex:50%;
+        h1 {
+            color:#fff;
+            font-size:32px;
+            
+        }
+    
+        h2 {
+            color:#fff;
+            font-size:22px;
+        }
+    
+        p {
+            color:#fff;
+            padding-top:41px;
+            width:429px;
+            font-size:16px;
+            line-height: 24px;
+            font-weight: 300;
+        }
+
+        .buttons {
+
+            margin-top:66px;
+            text-align: center;
+    
+        button {
+            background-color: #A62120;
+            color:white;
+            text-decoration: none;
+            border:1px solid #fff;
+            padding-top:12px;
+            padding-bottom:13px;
+            border-radius: 20px;
+            width:174px;
+    
+        }
+    
+        #leftBtn {
+            margin-right:16px;
+        }
+    
+    }
+    
+    }
+   
+//PICTURES SECTION - RIGHT SIDE
+
+    .pictures {
+        flex:50%;
+
+        #food2 {
+            padding-right: 17px;
+        }
+    
+        #food4 {
+            padding-left:18px;
+        }
+    }
+
+   }
+
+   
+}
+
+
+//RESPONSIVE DESIGN
+
+@media only screen and (max-width:1310px) {
+    .second-container {
+        width:999px;
+    }
+
+    #hero2 {
+        .content {
+            gap:15px;
+        }
+    }
+}
+
+
+@media only screen and (max-width:999px) {
+    
+    .second-container {
+        width:768px;
+    }
+
+    #hero2 {
+        
+        .content {
+            padding-top:40px;
+            flex-direction: column;
+            gap:50px;
+
+            .text {
+                text-align: center;
+                order:2;
+                
+                .buttons {
+                    justify-content: center;
+                }
+            }
+
+            .pictures {
+                order:1;
+                
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width:768px) {
+    .second-container {
+        max-width:576px;
+    }
+
+    #hero2 {
+        .content {
+            .pictures {
+                #food1 {
+                    width:396px;
+                }
+                #food2,#food3,#food4 {
+                    width:120px;
+                }
+            }
+
+            .text {
+               p {
+                font-size:14px;
+               }
+
+               h2 {
+                font-size:18px;
+               }
+
+               h1 {
+                font-size:27px;
+               }
+
+               .buttons {
+                margin-top:45px;
+                button {
+                    width:145px;
+                }
+               }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:576px) {
+    .second-container {
+        max-width:320px;
+    }
+
+    #hero2 {
+        .content {
+            padding-top:5px;
+            .pictures {
+                #food1 {
+                    width:310px;
+                }
+
+                #food2,#food3,#food4 {
+                    width:90px;
+                }
+            }
+
+            .text {
+                p {
+                    width:unset;
+                }
+
+                .buttons {
+                    margin-top:35px;
+                    button {
+                        width:120px;
+                    }
+                }
+            }
+        }
+    }
+}

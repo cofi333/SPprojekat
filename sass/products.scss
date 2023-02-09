@@ -1,0 +1,93 @@
+#products {
+
+    background-color:#000;
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+
+
+    h1 {
+        color:#fff;
+        padding-top:119px;
+        padding-bottom:16px;
+    }
+
+    h2 {
+        color:#fff;
+    }
+
+    p {
+        color:#fff;
+        padding-top:65px;
+        padding-bottom: 50px;
+        width:652px;
+        margin:auto;
+    }
+
+    button {
+        background-color: #A62120;
+        color:white;
+        text-decoration: none;
+        border:1px solid #fff;
+        padding-top:12px;
+        padding-bottom:13px;
+        border-radius: 20px;
+        width:174px;
+        height:47px;
+        font-size:16px;
+
+    }
+
+    .pictures {
+        padding-left:16px;
+        padding-bottom:227px;
+    }
+
+    #logoNew {
+        display:block;
+        margin:0 auto;
+        padding-top:124px;
+        padding-bottom:88px;
+        width:100%;
+    }
+   
+}
+
+
+
+//RESPONSIVE DESIGN
+
+@media only screen and (max-width:768px) {
+    #products {
+        p {
+            max-width:320px;
+        }
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #products {
+        h1 {
+            padding-top:45px;
+        }
+
+        p {
+            padding-top:45px;
+        }
+
+        button {
+            width:130px;
+        }
+
+        .pictures {
+            padding-left:0;
+
+            img {
+                width:200px;
+            }
+        }
+
+        #logoNew {
+            padding:50px 0;
+        }
+    }
+}

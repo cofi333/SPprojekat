@@ -1,0 +1,196 @@
+#hero {
+
+    position:relative;
+
+    .slideshow-container {
+        position:relative;
+        .mySlides {
+
+            display:none;
+            img {
+                display:block;
+                width:100%;
+            }
+        }
+
+        .slideshow-items {
+            position:absolute;
+            bottom:25px;
+            left:45%;
+        }
+
+        .dots {
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+                margin:7px 10px;
+
+                &:hover {
+                    background-color: #FF0000;
+                }
+              }    
+
+              .active {
+                    background-color: #FF0000;
+              }
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+          
+          @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+          }
+
+          .prev,.next {
+            cursor:pointer;
+
+            
+          }
+
+    }
+    
+    
+
+    .text-background {
+        width:629px;
+        height:348px;
+        background-color:#0000004D;
+        position:absolute;
+        top:163px;
+
+        .text {
+
+            width:275px;
+            margin-left:300px;
+
+            h1 {
+                color:#fff;
+                font-family: 'Roboto', sans-serif;
+                width:242px;
+                font-weight: bolder;
+                padding-top:67px;
+                padding-bottom:15px;
+            }
+    
+            p {
+                color:#fff;
+                font-weight: lighter;
+                font-family: 'Roboto', sans-serif;
+                line-height: 24px;
+                width:275px;
+            }
+        }
+    }
+
+}
+
+
+//RESPONSIVE DESIGN
+   
+@media only screen and (max-width:1450px) {
+    #hero {
+        .text-background {
+            top:70px;
+            width:470px;
+
+            .text {
+                margin-left:165px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    #hero {
+        .text-background {
+            top:0;
+            height:100%;
+            width:420px;
+
+            .text {
+                margin-left:110px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:999px) {
+    #hero {
+        .text-background {
+            position:unset;
+            width:100%;
+            background-color: #000;
+
+            .text {
+                margin:0 auto;
+                padding-bottom:15px;
+
+                h1 {
+                    padding-top:35px;
+                }
+            }
+        }
+
+        .slideshow-container {
+            .slideshow-items {
+                left:39%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #hero {
+        .slideshow-container {
+            .slideshow-items {
+                left:36%;
+                bottom:7px;
+            }
+        }
+
+        .text-background {
+            .text {
+                text-align: center;
+               
+            }
+        }
+
+    }
+}
+
+
+@media only screen and (max-width:576px) {
+    #hero {
+        .slideshow-container {
+            .slideshow-items {
+                display:none;
+            }
+        }
+
+        .text-background {
+            .text {
+              
+                h1 {
+                    font-size:17px;
+                    padding-top:15px;
+                }
+
+                p {
+                    font-size:12px;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+footer {
+  font-family: "Roboto", sans-serif;
+}
+footer .pre-footer {
+  background-color: #B50014;
+}
+footer .pre-footer .flex-container3 {
+  justify-content: space-between;
+}
+footer .pre-footer .social-medias {
+  margin: auto 0;
+}
+footer .pre-footer .social-medias span {
+  color: #FFFFFF;
+  padding-top: 10px;
+}
+footer .pre-footer .social-medias .flex-container {
+  gap: 10px;
+}
+footer .pre-footer .informations {
+  color: #fff;
+  font-size: 16px;
+  margin: auto 0;
+}
+footer .pre-footer .informations .phone {
+  justify-content: unset;
+  gap: 10px;
+}
+footer .pre-footer .informations .mail {
+  justify-content: unset;
+  gap: 10px;
+}
+footer .pre-footer .informations .location {
+  gap: 10px;
+}
+footer .footer {
+  background-color: #66000B;
+}
+footer .footer .flex-container {
+  justify-content: space-between;
+}
+footer .footer span {
+  color: rgba(255, 255, 255, 0.5019607843);
+  padding: 5px 0;
+  font-size: 12px;
+}
+footer .footer span a {
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+
+@media only screen and (max-width: 999px) {
+  footer .pre-footer {
+    padding: 50px 0;
+  }
+  footer .pre-footer .flex-container3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  footer .pre-footer .flex-container3 {
+    gap: 15px;
+  }
+  footer .pre-footer .informations {
+    font-size: 13px;
+  }
+  footer .pre-footer .social-medias img {
+    width: 35px;
+  }
+  footer .pre-footer .social-medias .flex-container {
+    gap: 3px;
+  }
+  footer .footer span {
+    padding: 5px 15px;
+  }
+}
