@@ -17,7 +17,6 @@
   display: flex;
 }
 
-<<<<<<< HEAD
 .flex-container2 {
   display: flex;
   gap: 15px;
@@ -27,8 +26,6 @@
   display: flex;
 }
 
-=======
->>>>>>> 2f142c2ca4c857cf4b8c0f6a5dc0693afafa9137
 #navigation {
   height: 93px;
   background-color: #B50014;
@@ -154,10 +151,6 @@
 #hero2 {
   background-color: #000;
   font-family: "Roboto", sans-serif;
-<<<<<<< HEAD
-=======
-  padding-top: 114px;
->>>>>>> 2f142c2ca4c857cf4b8c0f6a5dc0693afafa9137
   padding-bottom: 90px;
 }
 #hero2 .content {
