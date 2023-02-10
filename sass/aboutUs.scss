@@ -83,7 +83,7 @@
 
         .cards {
             display:none;
-           // display:flex;
+            //display:flex;
             gap:15px;
             
             
@@ -142,13 +142,33 @@
 
     .awards {
         justify-content: center;
-        display:none;
+     
     }
     
 }
 
 
 //RESPONSIVE DESIGN
+
+
+@media only screen and (max-width:1100px) {
+    #aboutUs {
+        .awards {
+            flex-direction: column;
+
+            h1 {
+                text-align: center;
+                padding-top: unset;
+            }
+        }
+
+        #logoNew {
+            padding:130px 0;
+        }
+    }
+}
+
+
 
 @media only screen and (max-width:999px) {
     #aboutUs {
@@ -169,6 +189,12 @@
     }
 }
 
+@media only screen and (max-width:768px) {
+    .flex-container2 {
+        flex-wrap:wrap;
+    }
+}
+
 
 @media only screen and (max-width:576px) {
     #aboutUs {
@@ -186,6 +212,19 @@
 
             .text {
                 margin-top:80px;
+            }
+        }
+
+
+        .awards {
+            .flex-container2 {
+                gap:40px;
+            }
+        }
+
+        #item {
+            img {
+                width:100px;
             }
         }
     }

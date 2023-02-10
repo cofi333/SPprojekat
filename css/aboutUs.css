@@ -106,9 +106,20 @@
 }
 #aboutUs .awards {
   justify-content: center;
-  display: none;
 }
 
+@media only screen and (max-width: 1100px) {
+  #aboutUs .awards {
+    flex-direction: column;
+  }
+  #aboutUs .awards h1 {
+    text-align: center;
+    padding-top: unset;
+  }
+  #aboutUs #logoNew {
+    padding: 130px 0;
+  }
+}
 @media only screen and (max-width: 999px) {
   #aboutUs .first-content {
     flex-direction: column;
@@ -123,6 +134,11 @@
     text-align: center;
   }
 }
+@media only screen and (max-width: 768px) {
+  .flex-container2 {
+    flex-wrap: wrap;
+  }
+}
 @media only screen and (max-width: 576px) {
   #aboutUs .first-content .logo {
     padding-top: 90px;
@@ -135,5 +151,11 @@
   }
   #aboutUs .first-content .text {
     margin-top: 80px;
+  }
+  #aboutUs .awards .flex-container2 {
+    gap: 40px;
+  }
+  #aboutUs #item img {
+    width: 100px;
   }
 }
