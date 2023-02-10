@@ -151,6 +151,9 @@
 #workTime .content span {
   font-size: 14px;
 }
+#workTime .content .flex-container {
+  justify-content: space-between;
+}
 
 @media only screen and (max-width: 768px) {
   #workTime {
@@ -736,7 +739,7 @@
 #aboutUs .quotes .cards {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 35px;
 }
 #aboutUs .quotes .button {
   text-align: center;
@@ -761,10 +764,12 @@
 #aboutUs .quotes .active-card #left-arrow {
   position: absolute;
   left: -15px;
+  top: 40%;
 }
 #aboutUs .quotes .active-card #right-arrow {
   position: absolute;
   right: -15px;
+  top: 40%;
 }
 #aboutUs .quotes .active-card img {
   display: block;
@@ -833,6 +838,12 @@
   #aboutUs .first-content .text {
     margin-top: 100px;
     text-align: center;
+  }
+  #aboutUs .inactive-card {
+    display: none;
+  }
+  #aboutUs .active-card {
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 768px) {
