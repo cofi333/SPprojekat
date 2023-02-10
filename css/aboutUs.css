@@ -63,7 +63,8 @@
 #aboutUs .quotes .cards {
   display: flex;
   align-items: center;
-  gap: 35px;
+  justify-content: center;
+  gap: 15px;
 }
 #aboutUs .quotes .button {
   text-align: center;
@@ -87,12 +88,12 @@
 }
 #aboutUs .quotes .active-card #left-arrow {
   position: absolute;
-  left: -15px;
+  left: -35px;
   top: 40%;
 }
 #aboutUs .quotes .active-card #right-arrow {
   position: absolute;
-  right: -15px;
+  right: -35px;
   top: 40%;
 }
 #aboutUs .quotes .active-card img {

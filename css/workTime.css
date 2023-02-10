@@ -12,9 +12,6 @@
 #workTime .content span {
   font-size: 14px;
 }
-#workTime .content .flex-container {
-  justify-content: space-between;
-}
 
 @media only screen and (max-width: 768px) {
   #workTime {
