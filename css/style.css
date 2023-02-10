@@ -652,7 +652,10 @@
 #order {
   background-image: url("../pictures/background5.png");
   background-color: #000;
+  background-attachment: fixed;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 540px;
   color: #fff;
   text-align: center;
@@ -675,6 +678,11 @@
   margin-top: 47px;
 }
 
+@media only screen and (max-width: 576px) {
+  #order {
+    background-attachment: scroll;
+  }
+}
 #aboutUs {
   background-color: #000;
   color: #fff;
@@ -955,4 +963,62 @@ footer .footer span a {
 }
 .lightMode h1, .lightMode p, .lightMode h2, .lightMode h3, .lightMode h5, .lightMode span, .lightMode i {
   color: #A62120 !important;
+}
+
+.popup {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  background-color: #B50014;
+  z-index: 1300;
+  display: none;
+  padding-top: 15px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+.popup .content {
+  margin: 5px 10px;
+}
+.popup .content p {
+  padding-top: 5px;
+}
+.popup .content i {
+  position: absolute;
+  top: 5px;
+  right: 35px;
+  font-size: 25px;
+  padding-top: 10px;
+}
+.popup .content i:hover {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 999px) {
+  .popup {
+    height: 120px;
+  }
+  .popup .content p {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+  .popup .content h1 {
+    padding-top: 0;
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .popup .content p {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .popup {
+    height: 140px;
+  }
+  .popup .content h1 {
+    font-size: 22px;
+  }
 }

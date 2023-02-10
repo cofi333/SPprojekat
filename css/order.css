@@ -1,7 +1,10 @@
 #order {
   background-image: url("../pictures/background5.png");
   background-color: #000;
+  background-attachment: fixed;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 540px;
   color: #fff;
   text-align: center;
@@ -22,4 +25,10 @@
   width: 174px;
   font-size: 16px;
   margin-top: 47px;
+}
+
+@media only screen and (max-width: 576px) {
+  #order {
+    background-attachment: scroll;
+  }
 }

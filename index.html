@@ -8,9 +8,9 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
+    <script src="./script/popup.js"></script>
     <script src="./script/slider.js"></script>
     <script src="./script/hamburgerMenu.js"></script>
-    <script src="./script/quoteSlider.js"></script>
     <script src="./script/lightMode.js"></script>
     <script src="https://kit.fontawesome.com/ac55437ec8.js" crossorigin="anonymous"></script>
 
@@ -292,12 +292,14 @@
 
                 <div class="cards">
 
-                    <div class="inactive-card">
+                    <div class="slides inactive-card">
                         <p>Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.</p>
                         <h5>Maria Kartofeln</h5>
+                        <img src="./pictures/leftarrow.png" alt="Left Arrow" id="left-arrow" onclick="plusSlidess(-1)">
+                        <img src="./pictures/rightarrow.png" alt="Right Arrow" id="right-arrow" onclick="plusSlidess(1)">
                     </div>
 
-                    <div class="active-card">
+                    <div class="slides active-card">
                  
                         <img src="./pictures/Group.png" alt="Icon">
                         <img src="./pictures/zvezdice.svg" alt="Stars" id="stars-icon">
@@ -307,14 +309,16 @@
                         <h3>Halling Tobias</h3>
                         <h5>Koch</h5>
 
-                        <img src="./pictures/leftarrow.png" alt="Left Arrow" id="left-arrow">
-                        <img src="./pictures/rightarrow.png" alt="Right Arrow" id="right-arrow">
+                        <img src="./pictures/leftarrow.png" alt="Left Arrow" id="left-arrow" onclick="plusSlidess(-1)">
+                        <img src="./pictures/rightarrow.png" alt="Right Arrow" id="right-arrow" onclick="plusSlidess(1)">
                         <img id="quote-icon" src="./pictures/znak.svg" alt="Icon">
                     </div>
 
-                    <div class="inactive-card">
+                    <div class="slides inactive-card">
                         <p>Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</p>
                         <h5>Rene Weinstein</h5>
+                        <img src="./pictures/leftarrow.png" alt="Left Arrow" id="left-arrow" onclick="plusSlidess(-1)">
+                        <img src="./pictures/rightarrow.png" alt="Right Arrow" id="right-arrow" onclick="plusSlidess(1)">
                     </div>
 
                     
@@ -386,5 +390,19 @@
         
 
     </footer>
+
+
+    <div class="popup">
+        <div class="content">
+            <H1>We value your privacy</H1>
+            <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. Cookie Policy</p>
+            <a onclick="closePopup()"><i class="fa-solid fa-x"></i></a>
+
+        </div>
+            
+    </div>
+
+   
+
 </body>
 </html>
