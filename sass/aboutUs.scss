@@ -82,7 +82,8 @@
     .quotes {
 
         .cards {
-            display:flex;
+            display:none;
+           // display:flex;
             gap:15px;
             
             
@@ -141,6 +142,7 @@
 
     .awards {
         justify-content: center;
+        display:none;
     }
     
 }
@@ -148,3 +150,43 @@
 
 //RESPONSIVE DESIGN
 
+@media only screen and (max-width:999px) {
+    #aboutUs {
+        .first-content {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .logo {
+                padding-left:0;
+            }
+
+            .text {
+                margin-top:100px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:576px) {
+    #aboutUs {
+        .first-content {
+            .logo {
+                padding-top:90px;
+                img {
+                    width:266px;
+                }
+            }
+
+            h1 {
+                padding-top:0;
+            }
+
+            .text {
+                margin-top:80px;
+            }
+        }
+    }
+}

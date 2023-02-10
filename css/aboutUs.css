@@ -61,7 +61,7 @@
   text-align: center;
 }
 #aboutUs .quotes .cards {
-  display: flex;
+  display: none;
   gap: 15px;
 }
 #aboutUs .quotes .button {
@@ -106,4 +106,34 @@
 }
 #aboutUs .awards {
   justify-content: center;
+  display: none;
+}
+
+@media only screen and (max-width: 999px) {
+  #aboutUs .first-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #aboutUs .first-content .logo {
+    padding-left: 0;
+  }
+  #aboutUs .first-content .text {
+    margin-top: 100px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #aboutUs .first-content .logo {
+    padding-top: 90px;
+  }
+  #aboutUs .first-content .logo img {
+    width: 266px;
+  }
+  #aboutUs .first-content h1 {
+    padding-top: 0;
+  }
+  #aboutUs .first-content .text {
+    margin-top: 80px;
+  }
 }
