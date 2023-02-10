@@ -11,6 +11,7 @@
     <script src="./script/slider.js"></script>
     <script src="./script/hamburgerMenu.js"></script>
     <script src="./script/quoteSlider.js"></script>
+    <script src="./script/lightMode.js"></script>
     <script src="https://kit.fontawesome.com/ac55437ec8.js" crossorigin="anonymous"></script>
 
 </head>
@@ -49,10 +50,11 @@
     <section id="workTime">
         <div class="container">
             <div class="content">
-                <i class="fa-light fa-lightbulb"></i>
-              <img src="./pictures/Vector.svg" alt="Time">
-              <span>Opentime:   Di. - Fr.: 07:00-13:00  und 15:00-18:30.    Sa.:	 07:30	-	12:30</span>  
-              
+
+                <a onclick="lightFunction()"><i class="fa-solid fa-lightbulb"></i>LIGHT</a>
+                 <img src="./pictures/Vector.svg" alt="Time">
+                <span>Opentime:   Di. - Fr.: 07:00-13:00  und 15:00-18:30.    Sa.:	 07:30	-	12:30</span>  
+
             </div>  
             
         </div>
@@ -213,13 +215,13 @@
 
     <!--ORDER SECTION-->
 
-    <section id="order">
-        <div class="container">
-           
+    <section id="order" >
+     
+           <div class="container">
                 <h1>Fleischversand</h1>
                 <button>Jetzt bestellen</button>
+           </div>
            
-        </div>
     </section>
 
     <!--ABOUT US SECTION-->
