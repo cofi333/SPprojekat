@@ -61,7 +61,8 @@
   text-align: center;
 }
 #aboutUs .quotes .cards {
-  display: none;
+  display: flex;
+  align-items: center;
   gap: 15px;
 }
 #aboutUs .quotes .button {
@@ -77,32 +78,59 @@
   font-size: 32px;
   margin: 0 auto;
 }
-#aboutUs .quotes .quote {
+#aboutUs .quotes .active-card {
+  height: 429px;
+  width: 414px;
   background-color: #333333;
-  padding: 20px;
   margin-bottom: 90px;
   position: relative;
 }
-#aboutUs .quotes .quote img {
+#aboutUs .quotes .active-card #left-arrow {
+  position: absolute;
+  left: -15px;
+}
+#aboutUs .quotes .active-card #right-arrow {
+  position: absolute;
+  right: -15px;
+}
+#aboutUs .quotes .active-card img {
   display: block;
   margin: 0 auto;
+  padding-top: 35px;
 }
-#aboutUs .quotes .quote #stars-icon {
+#aboutUs .quotes .active-card #stars-icon {
   padding-top: 10px;
   padding-bottom: 20px;
 }
-#aboutUs .quotes .quote p {
+#aboutUs .quotes .active-card p {
   width: 342px;
   text-align: center;
   padding-bottom: 50px;
+  padding-top: 25px;
+  margin: 0 auto;
 }
-#aboutUs .quotes .quote h5 {
+#aboutUs .quotes .active-card h5 {
   text-align: center;
   padding-top: 10px;
 }
-#aboutUs .quotes .quote #quote-icon {
+#aboutUs .quotes .active-card #quote-icon {
   position: absolute;
   right: 10px;
+}
+#aboutUs .quotes .inactive-card {
+  width: 317px;
+  height: 257px;
+  text-align: center;
+  background-color: #333333;
+}
+#aboutUs .quotes .inactive-card p {
+  padding-top: 97px;
+  width: 250px;
+  font-size: 12px;
+  margin: 0 auto;
+}
+#aboutUs .quotes .inactive-card h5 {
+  padding-top: 23px;
 }
 #aboutUs .awards {
   justify-content: center;
