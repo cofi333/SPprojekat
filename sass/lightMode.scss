@@ -1,6 +1,6 @@
 
 .lightMode {
-    background-color: #e6e6e6 !important;
+    background-color: #e6e6e6!important;
     
     h1,h2,h3,h5,span,i,a,p {
         color:#A62120 !important;
@@ -10,6 +10,17 @@
     color:#fff !important;
    }
    
+   
+    .first-content {
+        .logo {
+            img {
+                background-color:#A62120;
+                padding:25px;
+                border:1px solid #000;
+                border-radius: 25px;
+            }
+        }   
+    }
    
    
 

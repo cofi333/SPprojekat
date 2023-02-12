@@ -8,6 +8,7 @@
   justify-content: center;
 }
 #course .text .text-content {
+  font-family: "Roboto", sans-serif;
   width: 300px;
   margin: 0 auto;
 }

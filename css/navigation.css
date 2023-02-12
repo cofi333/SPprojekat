@@ -1,6 +1,15 @@
 #navigation {
   height: 93px;
   background-color: #B50014;
+  font-family: "Roboto", sans-serif;
+}
+#navigation #downloadBtn {
+  align-items: center;
+  gap: 5px;
+  height: 93px;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 20px;
 }
 #navigation #hamburgerIcon {
   display: none;
@@ -19,22 +28,22 @@
   list-style: none;
   padding: 0 20px;
 }
-#navigation ul li #downloadBtn {
-  align-items: center;
-  gap: 5px;
-}
 #navigation ul li a {
   text-decoration: none;
   color: #FFFFFF;
-  font-family: "Roboto", sans-serif;
 }
 
 @media only screen and (max-width: 1310px) {
   .container {
     max-width: 999px;
   }
+  #navigation #downloadBtn {
+    padding: 0 5px;
+    font-size: 14px;
+  }
   #navigation ul li {
     padding-left: 0;
+    padding-right: 20px;
     text-align: center;
   }
   #navigation ul li a {
@@ -81,6 +90,9 @@
   #navigation {
     height: 70px;
   }
+  #navigation #downloadBtn {
+    height: 70px;
+  }
   #navigation #hamburgerIcon {
     font-size: 35px;
     margin-top: 16px;
@@ -94,6 +106,9 @@
 }
 @media only screen and (max-width: 576px) {
   #navigation {
+    height: 55px;
+  }
+  #navigation #downloadBtn {
     height: 55px;
   }
   #navigation #hamburgerIcon {

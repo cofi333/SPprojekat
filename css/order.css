@@ -2,6 +2,8 @@
   background-image: url("../pictures/background5.png");
   background-color: #000;
   background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   height: 540px;
   color: #fff;
   text-align: center;

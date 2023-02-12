@@ -7,3 +7,9 @@
 .lightMode .p-card {
   color: #fff !important;
 }
+.lightMode .first-content .logo img {
+  background-color: #A62120;
+  padding: 25px;
+  border: 1px solid #000;
+  border-radius: 25px;
+}
