@@ -7,12 +7,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./css/style.css">
-
-    <script src="./script/popup.js"></script>
-    <script src="./script/slider.js"></script>
-    <script src="./script/hamburgerMenu.js"></script>
-    <script src="./script/lightMode.js"></script>
-    <script src="https://kit.fontawesome.com/ac55437ec8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
 </head>
 <body>
@@ -215,7 +210,7 @@
 
     <!--ORDER SECTION-->
 
-    <section id="order" >
+    <section id="order">
      
            <div class="container">
                 <h1>Fleischversand</h1>
@@ -290,39 +285,43 @@
                 <h3>Empfehlungs</h3>
                 <h1>Was die Leute über uns sagen</h1>
 
-                <div class="cards">
-
-                    <div class="slides inactive-card">
-                        <p>Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.</p>
-                        <h5>Maria Kartofeln</h5>
-                        <img src="./pictures/leftarrow.png" alt="Left Arrow" id="left-arrow" onclick="plusSlidess(-1)">
-                        <img src="./pictures/rightarrow.png" alt="Right Arrow" id="right-arrow" onclick="plusSlidess(1)">
-                    </div>
-
-                    <div class="slides active-card">
-                 
-                        <img src="./pictures/Group.png" alt="Icon">
-                        <img src="./pictures/zvezdice.svg" alt="Stars" id="stars-icon">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
                         
-                   
-                        <p>Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna  Luftballons Ut Turnbeutel nostrud exercitation ullamco .</p>
-                        <h3>Halling Tobias</h3>
-                        <h5>Koch</h5>
 
-                        <img src="./pictures/leftarrow.png" alt="Left Arrow" id="left-arrow" onclick="plusSlidess(-1)">
-                        <img src="./pictures/rightarrow.png" alt="Right Arrow" id="right-arrow" onclick="plusSlidess(1)">
-                        <img id="quote-icon" src="./pictures/znak.svg" alt="Icon">
+                        <div class="swiper-slide card">
+                            <img src="./pictures/Group.png" alt="Icon">
+                                <img src="./pictures/zvezdice.svg" alt="Stars" id="stars-icon">
+                                
+                           
+                                <p>Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna  Luftballons Ut Turnbeutel nostrud exercitation ullamco .</p>
+                                <h3>Halling Tobias</h3>
+                                <h5>Koch</h5>
+
+                                <img id="quote-icon" src="./pictures/znak.svg" alt="Icon">
+                                
+                                
+                        </div>
+
+                        <div class="swiper-slide card2">
+                            <p>Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.</p>
+                            <h5>Maria Kartofeln</h5>
+                          
+                        </div>
+
+                        <div class="swiper-slide card2">
+                            <p>Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</p>
+                            <h5>Rene Weinstein</h5>
+                        </div>
+
+                       
+
                     </div>
-
-                    <div class="slides inactive-card">
-                        <p>Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</p>
-                        <h5>Rene Weinstein</h5>
-                        <img src="./pictures/leftarrow.png" alt="Left Arrow" id="left-arrow" onclick="plusSlidess(-1)">
-                        <img src="./pictures/rightarrow.png" alt="Right Arrow" id="right-arrow" onclick="plusSlidess(1)">
-                    </div>
-
-                    
+                  
+                    <img src="./pictures/leftarrow.png" alt="Left arrow" class="button-prev">
+                    <img src="./pictures/rightarrow.png" alt="Right arrow" class="button-next">        
                 </div>
+               
                 
                 <div class="button">
                 <button>Alle Berichte</button>
@@ -405,4 +404,16 @@
    
 
 </body>
+
+
+    <script src="./script/popup.js"></script>
+    <script src="./script/slider.js"></script>
+    <script src="./script/hamburgerMenu.js"></script>
+    <script src="./script/lightMode.js"></script>
+    <script src="https://kit.fontawesome.com/ac55437ec8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script/quoteSlider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script src="./script/parallax.js"></script>
+    
 </html>

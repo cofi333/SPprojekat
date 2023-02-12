@@ -652,10 +652,7 @@
 #order {
   background-image: url("../pictures/background5.png");
   background-color: #000;
-  background-attachment: fixed;
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 540px;
   color: #fff;
   text-align: center;
@@ -745,11 +742,75 @@
   padding-top: 14px;
   text-align: center;
 }
-#aboutUs .quotes .cards {
+#aboutUs .quotes {
+  position: relative;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+}
+#aboutUs .quotes .swiper {
+  width: 95%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+#aboutUs .quotes .swiper .button-next, #aboutUs .quotes .swiper .button-prev {
+  display: none;
+}
+#aboutUs .quotes .swiper .swiper-wrapper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+#aboutUs .quotes .swiper .swiper-wrapper .card {
+  height: 429px;
+  width: 414px;
+  background-color: #333333;
+  margin-bottom: 90px;
+  position: relative;
+}
+#aboutUs .quotes .swiper .swiper-wrapper .card img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 35px;
+}
+#aboutUs .quotes .swiper .swiper-wrapper .card #stars-icon {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#aboutUs .quotes .swiper .swiper-wrapper .card p {
+  width: 342px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 25px;
+  margin: 0 auto;
+}
+#aboutUs .quotes .swiper .swiper-wrapper .card h5 {
+  text-align: center;
+  padding-top: 10px;
+}
+#aboutUs .quotes .swiper .swiper-wrapper .card #quote-icon {
+  position: absolute;
+  right: 10px;
+}
+#aboutUs .quotes .swiper .swiper-wrapper .card2 {
+  height: 429px;
+  width: 414px;
+  background-color: #333333;
+  margin-bottom: 90px;
+  position: relative;
+}
+#aboutUs .quotes .swiper .swiper-wrapper .card2 p {
+  text-align: center;
+  width: 342px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+#aboutUs .quotes .swiper .swiper-wrapper .card2 h5 {
+  text-align: center;
+  padding-top: 25px;
 }
 #aboutUs .quotes .button {
   text-align: center;
@@ -763,62 +824,6 @@
   text-align: center;
   font-size: 32px;
   margin: 0 auto;
-}
-#aboutUs .quotes .active-card {
-  height: 429px;
-  width: 414px;
-  background-color: #333333;
-  margin-bottom: 90px;
-  position: relative;
-}
-#aboutUs .quotes .active-card #left-arrow {
-  position: absolute;
-  left: -35px;
-  top: 40%;
-}
-#aboutUs .quotes .active-card #right-arrow {
-  position: absolute;
-  right: -35px;
-  top: 40%;
-}
-#aboutUs .quotes .active-card img {
-  display: block;
-  margin: 0 auto;
-  padding-top: 35px;
-}
-#aboutUs .quotes .active-card #stars-icon {
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-#aboutUs .quotes .active-card p {
-  width: 342px;
-  text-align: center;
-  padding-bottom: 50px;
-  padding-top: 25px;
-  margin: 0 auto;
-}
-#aboutUs .quotes .active-card h5 {
-  text-align: center;
-  padding-top: 10px;
-}
-#aboutUs .quotes .active-card #quote-icon {
-  position: absolute;
-  right: 10px;
-}
-#aboutUs .quotes .inactive-card {
-  width: 317px;
-  height: 257px;
-  text-align: center;
-  background-color: #333333;
-}
-#aboutUs .quotes .inactive-card p {
-  padding-top: 97px;
-  width: 250px;
-  font-size: 12px;
-  margin: 0 auto;
-}
-#aboutUs .quotes .inactive-card h5 {
-  padding-top: 23px;
 }
 #aboutUs .awards {
   justify-content: center;
@@ -860,6 +865,23 @@
   .flex-container2 {
     flex-wrap: wrap;
   }
+  #aboutUs .quotes .swiper {
+    width: 72%;
+  }
+  #aboutUs .quotes .swiper .button-prev {
+    display: block;
+    position: absolute;
+    bottom: 60px;
+    left: 135px;
+    width: 50px;
+  }
+  #aboutUs .quotes .swiper .button-next {
+    display: block;
+    position: absolute;
+    right: 135px;
+    bottom: 60px;
+    width: 50px;
+  }
 }
 @media only screen and (max-width: 576px) {
   #aboutUs .first-content .logo {
@@ -873,6 +895,22 @@
   }
   #aboutUs .first-content .text {
     margin-top: 80px;
+  }
+  #aboutUs .quotes .swiper {
+    width: 95%;
+  }
+  #aboutUs .quotes .swiper .button-prev {
+    left: 90px;
+  }
+  #aboutUs .quotes .swiper .button-next {
+    right: 90px;
+  }
+  #aboutUs .quotes .swiper .swiper-wrapper .card p, #aboutUs .quotes .swiper .swiper-wrapper .card2 p {
+    width: 260px;
+  }
+  #aboutUs .quotes .swiper .swiper-wrapper .card #quote-icon, #aboutUs .quotes .swiper .swiper-wrapper .card2 #quote-icon {
+    right: 70px;
+    bottom: -15px;
   }
   #aboutUs .awards .flex-container2 {
     gap: 40px;
