@@ -120,6 +120,13 @@ footer {
               
             }
 
+            .footer {
+                text-align: center;
+                .flex-container {
+                    flex-direction: column;
+                }
+            }
+
             
         }
 }

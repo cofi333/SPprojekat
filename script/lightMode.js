@@ -4,7 +4,7 @@ function lightFunction() {
     const products = document.getElementById("products");
     const aboutUs = document.getElementById("aboutUs");
 
-
+    
     workTime.classList.toggle("lightMode");
     hero2.classList.toggle("lightMode");
     products.classList.toggle("lightMode");

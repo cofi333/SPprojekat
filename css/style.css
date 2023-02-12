@@ -1037,6 +1037,12 @@ footer .footer span a {
   footer .pre-footer .social-medias .flex-container {
     gap: 3px;
   }
+  footer .footer {
+    text-align: center;
+  }
+  footer .footer .flex-container {
+    flex-direction: column;
+  }
 }
 .lightMode {
   background-color: #e6e6e6 !important;
