@@ -48,12 +48,25 @@
 
 //RESPONSIVE DESIGN
 
-@media only screen and (max-width:1350px) {
+@media only screen and (max-width:1310px) {
     #spices {
         .content {
             .text {
-                padding-left:35px;
-               
+                padding:0 35px;
+                    h1 {
+                        width:unset;
+                        
+                    }
+
+                    h2 {
+                        width:unset;
+                       
+                    }
+
+                    p {
+                        width:unset;
+                       
+                    }
 
             }
         }
@@ -73,6 +86,18 @@
             .text {
                 order:1;
                 padding:150px 0;
+
+                h1 {
+                    width:431px;
+                }
+
+                h2 {
+                    width:404px;
+                }
+
+                p {
+                    width:431px;
+                }
             }
         }
     }
@@ -83,7 +108,7 @@
         .content {
          
             .text {
-                padding:55px 0;
+                padding:55px 15px;
                 text-align: center;
                 h1 {
                     width:unset;

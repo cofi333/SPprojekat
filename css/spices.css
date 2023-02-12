@@ -31,9 +31,18 @@
   line-height: 24px;
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1310px) {
   #spices .content .text {
-    padding-left: 35px;
+    padding: 0 35px;
+  }
+  #spices .content .text h1 {
+    width: unset;
+  }
+  #spices .content .text h2 {
+    width: unset;
+  }
+  #spices .content .text p {
+    width: unset;
   }
 }
 @media only screen and (max-width: 999px) {
@@ -47,10 +56,19 @@
     order: 1;
     padding: 150px 0;
   }
+  #spices .content .text h1 {
+    width: 431px;
+  }
+  #spices .content .text h2 {
+    width: 404px;
+  }
+  #spices .content .text p {
+    width: 431px;
+  }
 }
 @media only screen and (max-width: 576px) {
   #spices .content .text {
-    padding: 55px 0;
+    padding: 55px 15px;
     text-align: center;
   }
   #spices .content .text h1 {
