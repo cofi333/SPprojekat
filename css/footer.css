@@ -41,7 +41,7 @@ footer .footer .flex-container {
 }
 footer .footer span {
   color: rgba(255, 255, 255, 0.5019607843);
-  padding: 5px 0;
+  padding: 5px 10px;
   font-size: 12px;
 }
 footer .footer span a {
@@ -70,8 +70,5 @@ footer .footer span a {
   }
   footer .pre-footer .social-medias .flex-container {
     gap: 3px;
-  }
-  footer .footer span {
-    padding: 5px 15px;
   }
 }
