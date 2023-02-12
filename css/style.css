@@ -529,6 +529,9 @@
     width: unset;
     text-align: center;
   }
+  #course .content .text .text-content ul {
+    padding-left: 0;
+  }
   #course .content .text .text-content ul li {
     list-style: none;
   }
