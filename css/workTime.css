@@ -12,6 +12,10 @@
 #workTime .content span {
   font-size: 14px;
 }
+#workTime .content .light-btn {
+  background-color: #fff;
+  color: #000;
+}
 
 @media only screen and (max-width: 768px) {
   #workTime {
