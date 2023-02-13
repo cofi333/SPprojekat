@@ -20,3 +20,16 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 
+  var swiper2 = new Swiper(".mySwiper2", {
+    navigation: {
+      nextEl: ".button-next",
+      prevEl: ".button-prev",
+    },
+
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    loop:true,
+  });
+

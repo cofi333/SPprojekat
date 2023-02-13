@@ -46,7 +46,7 @@
         <div class="container">
             <div class="content">
 
-                <a onclick="lightFunction()" class="light-btn">TURN ON LIGHT</a>
+                <a onclick="lightFunction()" class="light-btn">LIGHT <i class="fa-regular fa-lightbulb"></i></a>
 
                 <div class="time">
                  <img src="./pictures/Vector.svg" alt="Time">
@@ -63,31 +63,27 @@
 
     <section id="hero">
 
-            <div class="slideshow-container">
-                <div class="mySlides fade" style="display:block">
-                    <img src="./pictures/background.svg" alt="Background 1">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./pictures/background.svg" alt="Background">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./pictures/background2slider.jpg" alt="Background">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./pictures/background3slider.jpg" alt="Background">
+                    </div>
                 </div>
 
-                <div class="mySlides fade">
-                    <img src="./pictures/background2slider.jpg" alt="Background 2">
+                <div class="swiper-elements">
+                    <div class="button-next"><img src="./pictures/rightarrow.png" alt="Right arrow"></div>
+                    <div class="button-prev"><img src="./pictures/leftarrow.png" alt="Left arrow"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-
-                <div class="mySlides fade">
-                    <img src="./pictures/background3slider.jpg" alt="Background 3">
-                </div>
-
-            <div class="slideshow-items flex-container">
-                <a class="prev" onclick="plusSlides(-1)"><img src="./pictures/leftarrow.png" alt="Left Arrow"></a>
-                <div class="dots">
-                    <span class="dot active" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                <a class="next" onclick="plusSlides(1)"><img src="./pictures/rightarrow.png" alt="Right Arrow"></a>
             </div>
-            </div>
-            
-            </div>
-
             
 
   
