@@ -14,7 +14,7 @@
       }  
 
       .swiper-pagination-bullet-active {
-        background-color:red;
+        background-color:#B50014;
       }
 
       .swiper-elements {
@@ -24,7 +24,7 @@
             bottom:15px;
             right:45%;
             z-index:55;
-            margin:0 -10px;
+            margin:0 -30px;
 
             &:hover {
                 cursor:pointer;
@@ -36,7 +36,7 @@
             bottom:15px;
             left:45%;
             z-index:55;
-            margin:0 -10px;
+            margin:0 -30px;
 
             &:hover {
                 cursor:pointer;
@@ -46,6 +46,13 @@
         .swiper-pagination {
             position:absolute;
             bottom:25px;
+    
+
+            .swiper-pagination-bullet {
+                width:12px;
+                height:12px;
+                margin: 0 var(--swiper-pagination-bullet-horizontal-gap,10px);
+            }
         }
       }
 
@@ -142,7 +149,7 @@
              .swiper {
                 .swiper-elements {
                     .button-next,.button-prev {
-                        margin: 0 -20px;
+                        margin: 0 -45px;
                        }
                    }
                    
@@ -155,12 +162,7 @@
 
 @media only screen and (max-width:768px) {
     #hero {
-        .slideshow-container {
-            .slideshow-items {
-                left:36%;
-                bottom:7px;
-            }
-        }
+       
 
         .text-background {
             .text {

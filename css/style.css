@@ -221,14 +221,14 @@
   width: 100%;
 }
 #hero .swiper .swiper-pagination-bullet-active {
-  background-color: red;
+  background-color: #B50014;
 }
 #hero .swiper .swiper-elements .button-next {
   position: absolute;
   bottom: 15px;
   right: 45%;
   z-index: 55;
-  margin: 0 -10px;
+  margin: 0 -30px;
 }
 #hero .swiper .swiper-elements .button-next:hover {
   cursor: pointer;
@@ -238,7 +238,7 @@
   bottom: 15px;
   left: 45%;
   z-index: 55;
-  margin: 0 -10px;
+  margin: 0 -30px;
 }
 #hero .swiper .swiper-elements .button-prev:hover {
   cursor: pointer;
@@ -246,6 +246,11 @@
 #hero .swiper .swiper-elements .swiper-pagination {
   position: absolute;
   bottom: 25px;
+}
+#hero .swiper .swiper-elements .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
 }
 #hero .text-background {
   width: 629px;
@@ -308,14 +313,10 @@
     padding-top: 35px;
   }
   #hero .swiper .swiper-elements .button-next, #hero .swiper .swiper-elements .button-prev {
-    margin: 0 -20px;
+    margin: 0 -45px;
   }
 }
 @media only screen and (max-width: 768px) {
-  #hero .slideshow-container .slideshow-items {
-    left: 36%;
-    bottom: 7px;
-  }
   #hero .text-background .text {
     text-align: center;
   }
