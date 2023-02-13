@@ -18,7 +18,7 @@ function Products() {
         <img src={Logo}  alt="Logo" id="logoNew"/>
     </div>
 
-    <div class="pictures">
+    <div className="pictures">
         <img src={Food1} alt="Food"/>
         <img src={Food2} alt="Food"/>
         <img src={Food3} alt="Food"/>

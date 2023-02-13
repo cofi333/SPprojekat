@@ -4,12 +4,12 @@ import Background from '../pictures/background3.jpg';
 function Spices() {
   return (
     <section id="spices">
-        <div class="flex-container content">
+        <div className="flex-container content">
 
-            <div class="background">
+            <div className="background">
                 <img src={Background} alt="Background"/>
             </div>
-            <div class="text">
+            <div className="text">
                 <h1>Custome spices for your meat</h1>
                 <h2>Turnbeutel nostrud exercitation ullamco 
                     Sprechen Sie deutsch</h2>

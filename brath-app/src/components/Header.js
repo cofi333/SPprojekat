@@ -34,8 +34,8 @@ function Header() {
             </ul>
         </nav>
 
-        <a href="#" class="flex-container" id="downloadBtn"><img src={PDF} alt="PDF logo"/>download</a>
-            <a onClick={myFunction}><i class="fa-solid fa-bars" id="hamburgerIcon"></i></a>
+        <a href="#" className="flex-container" id="downloadBtn"><img src={PDF} alt="PDF logo"/>download</a>
+            <a onClick={myFunction}><i className="fa-solid fa-bars" id="hamburgerIcon"></i></a>
 
         </div>
 

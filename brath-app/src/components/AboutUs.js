@@ -9,13 +9,13 @@ import Grade4 from '../pictures/nagrada4.svg';
 function AboutUs() {
   return (
     <section id="aboutUs">
-        <div class="second-container">
-            <div class="flex-container first-content">
-                <div class="logo">
+        <div className="second-container">
+            <div className="flex-container first-content">
+                <div className="logo">
                     <img src={Logo} alt="logo"/>
                 </div>
 
-                <div class="text">
+                <div className="text">
                     <h1>Metzgerei Brath ist Mitglied 
                         im Genussnetzwerk</h1>
                     
@@ -29,11 +29,11 @@ function AboutUs() {
         </div>  
         
 
-    <div class="flex-container awards second-container">
+    <div className="flex-container awards second-container">
 
         <h1>Auszeichnungen</h1>
 
-        <div class="flex-container2 second-container">
+        <div className="flex-container2 second-container">
             
            
 
@@ -63,7 +63,7 @@ function AboutUs() {
         </div>
     </div>
 
-        <div class="second-container">
+        <div className="second-container">
             <img src={Logo2}  alt="Logo" id="logoNew2"/>
         </div>
 

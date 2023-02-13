@@ -11,24 +11,24 @@ import Youtube from '../pictures/youtube.png';
 function Footer() {
   return (
     <footer>
-        <div class="pre-footer">
-            <div class="container flex-container3">
-                <div class="informations">
-                    <div class="location flex-container">
+        <div className="pre-footer">
+            <div className="container flex-container3">
+                <div className="informations">
+                    <div className="location flex-container">
                       <img src={Location} alt="Icon"/>
                         <span>Klauprechtstraße  25
                             76137 Karlsruhe, Germany</span>
                         
                     </div>
 
-                    <div class="phone flex-container">
+                    <div className="phone flex-container">
                         <img src={Phone} alt="Icon"/>
                         <span>
                             +49 721 358060
                             </span>
                     </div>
 
-                    <div class="mail flex-container">
+                    <div className="mail flex-container">
                         <img src={Mail} alt="Icon"/>
                         <span>
                             info@partyservice-brath.de</span>
@@ -42,8 +42,8 @@ function Footer() {
                
 
 
-            <div class="social-medias">
-                <div class="flex-container">
+            <div className="social-medias">
+                <div className="flex-container">
                     <span>Besuchen Sie uns auf:</span>
                     <img src={Twitter} alt="Twitter Logo"/>
                     <img src={Facebook} alt="Facebook Logo"/>
@@ -56,8 +56,8 @@ function Footer() {
         </div>
 
 
-        <div class="footer">
-            <div class="container flex-container">
+        <div className="footer">
+            <div className="container flex-container">
                 <span>© 2020 by Metzgerei Heiko Brath  GmbH, Deutschland</span>
                 <span>Code and design by <a href="https://www.studiopresent.com/">StudioPresent</a></span>
             </div>

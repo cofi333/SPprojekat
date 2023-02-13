@@ -4,18 +4,21 @@ import clock from '../pictures/Vector.svg';
 function WorkTime() {
   return (
     <section id="workTime">
-    <div className="container">
-        <div className="content">
+        <div className="container">
+            <div className="content">
 
-           
-             <img src={clock} alt="Time"/>
-            <span>Opentime:   Di. - Fr.: 07:00-13:00  und 15:00-18:30.    Sa.:	 07:30	-	12:30</span>  
+                <a className="light-btn">LIGHT <i className="fa-regular fa-lightbulb"></i></a>
 
-        </div>  
+                <div className="time">
+                 <img src={clock} alt="Time"/>
+                <span>Opentime:   Di. - Fr.: 07:00-13:00  und 15:00-18:30.    Sa.:	 07:30	-	12:30</span>  
+                </div>
+
+            </div>  
+            
+        </div>
         
-    </div>
-    
-</section>
+    </section>
   )
 }
 

@@ -4,7 +4,7 @@ function Order() {
   return (
     <section id="order">
 
-            <div class="container">
+            <div className="container">
                 <h1>Fleischversand</h1>
                 <button>Jetzt bestellen</button>
            </div>
