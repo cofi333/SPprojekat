@@ -10,8 +10,14 @@
         height: 93px;
         text-decoration: none;
         color: #fff;
-        padding:0 20px;
+        padding:0 19px;
+        display:flex;
+        flex-grow:5;
+        justify-content: right;
+        margin:0 10px;
     }
+
+    
     
 
     #hamburgerIcon {
@@ -35,7 +41,7 @@
       
         li {
             list-style: none;
-            padding:0 20px;
+            padding:0 19px;
             
             
            
@@ -76,7 +82,7 @@
             
             li {
                 padding-left:0;
-                padding-right:20px;
+                padding-right:18px;
                 text-align: center;
 
                 a {

@@ -8,19 +8,38 @@
   padding-top: 6px;
   font-family: "Roboto", sans-serif;
   margin-right: 10px;
+  display: flex;
+  gap: 25px;
 }
 #workTime .content span {
   font-size: 14px;
 }
 #workTime .content .light-btn {
-  background-color: #fff;
-  color: #000;
+  color: #fff;
+  flex-grow: 4;
+  text-align: center;
+}
+#workTime .content .light-btn:hover {
+  cursor: pointer;
+  font-size: 18px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 999px) {
   #workTime {
+    height: unset;
     padding-left: 120px;
   }
+  #workTime .content {
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+  }
+  #workTime .content .light-btn {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 768px) {
   #workTime .content span {
     font-size: 12px;
   }
@@ -28,9 +47,11 @@
 @media only screen and (max-width: 576px) {
   #workTime {
     padding-left: 115px;
-    height: 50px;
   }
   #workTime .content {
     padding-top: 6px;
+  }
+  #workTime .content a {
+    font-size: 14px;
   }
 }
