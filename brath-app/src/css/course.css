@@ -48,9 +48,6 @@
 }
 
 @media only screen and (max-width: 1310px) {
-  #course .content .text .text-content {
-    width: 235px;
-  }
   #course .content .text .text-content h1 {
     font-size: 28px;
   }

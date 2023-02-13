@@ -8,19 +8,7 @@ function Hero() {
     
   return (
     <section id="hero">
-        <div className="slideshow-container">
-            <div className="mySlides fade">
-                <img src={background1} alt="Background"/>
-            </div>
-
-            <div className="mySlides fade">
-                <img src={background2} alt="Background"/>
-            </div>
-
-            <div className="mySlides fade">
-                <img src={background3} alt="Background"/>
-            </div>
-        </div>
+        
     </section>
   )
 }

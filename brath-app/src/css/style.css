@@ -37,7 +37,11 @@
   height: 93px;
   text-decoration: none;
   color: #fff;
-  padding: 0 20px;
+  padding: 0 19px;
+  display: flex;
+  flex-grow: 5;
+  justify-content: right;
+  margin: 0 10px;
 }
 #navigation #hamburgerIcon {
   display: none;
@@ -54,7 +58,7 @@
 }
 #navigation ul li {
   list-style: none;
-  padding: 0 20px;
+  padding: 0 19px;
 }
 #navigation ul li a {
   text-decoration: none;
@@ -71,7 +75,7 @@
   }
   #navigation ul li {
     padding-left: 0;
-    padding-right: 20px;
+    padding-right: 18px;
     text-align: center;
   }
   #navigation ul li a {
@@ -162,15 +166,41 @@
   padding-top: 6px;
   font-family: "Roboto", sans-serif;
   margin-right: 10px;
+  display: flex;
+  gap: 25px;
 }
 #workTime .content span {
   font-size: 14px;
 }
+#workTime .content .light-btn {
+  color: #fff;
+  flex-grow: 4;
+  text-align: center;
+}
+#workTime .content .light-btn:hover {
+  cursor: pointer;
+  font-size: 18px;
+}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 999px) {
   #workTime {
+    height: unset;
     padding-left: 120px;
   }
+  #workTime .content {
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+  }
+  #workTime .content .light-btn {
+    text-align: right;
+  }
+  #workTime .content .time {
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 768px) {
   #workTime .content span {
     font-size: 12px;
   }
@@ -178,61 +208,52 @@
 @media only screen and (max-width: 576px) {
   #workTime {
     padding-left: 115px;
-    height: 50px;
   }
   #workTime .content {
     padding-top: 6px;
+  }
+  #workTime .content a {
+    font-size: 14px;
   }
 }
 #hero {
   position: relative;
 }
-#hero .slideshow-container {
-  position: relative;
-}
-#hero .slideshow-container .mySlides {
-  display: none;
-}
-#hero .slideshow-container .mySlides img {
+#hero .swiper .swiper-wrapper .swiper-slide img {
   display: block;
   width: 100%;
 }
-#hero .slideshow-container .slideshow-items {
+#hero .swiper .swiper-pagination-bullet-active {
+  background-color: #B50014;
+}
+#hero .swiper .swiper-elements .button-next {
+  position: absolute;
+  bottom: 15px;
+  right: 45%;
+  z-index: 55;
+  margin: 0 -30px;
+}
+#hero .swiper .swiper-elements .button-next:hover {
+  cursor: pointer;
+}
+#hero .swiper .swiper-elements .button-prev {
+  position: absolute;
+  bottom: 15px;
+  left: 45%;
+  z-index: 55;
+  margin: 0 -30px;
+}
+#hero .swiper .swiper-elements .button-prev:hover {
+  cursor: pointer;
+}
+#hero .swiper .swiper-elements .swiper-pagination {
   position: absolute;
   bottom: 25px;
-  left: 45%;
 }
-#hero .slideshow-container .dots .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  margin: 7px 10px;
-}
-#hero .slideshow-container .dots .dot:hover {
-  background-color: #FF0000;
-}
-#hero .slideshow-container .dots .active {
-  background-color: #FF0000;
-}
-#hero .slideshow-container .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-#hero .slideshow-container .prev, #hero .slideshow-container .next {
-  cursor: pointer;
+#hero .swiper .swiper-elements .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
 }
 #hero .text-background {
   width: 629px;
@@ -240,6 +261,7 @@
   background-color: rgba(0, 0, 0, 0.3019607843);
   position: absolute;
   top: 163px;
+  z-index: 10;
 }
 #hero .text-background .text {
   width: 275px;
@@ -293,30 +315,16 @@
   #hero .text-background .text h1 {
     padding-top: 35px;
   }
-  #hero .slideshow-container .slideshow-items {
-    left: 39%;
+  #hero .swiper .swiper-elements .button-next, #hero .swiper .swiper-elements .button-prev {
+    margin: 0 -45px;
   }
 }
 @media only screen and (max-width: 768px) {
-  #hero .slideshow-container .slideshow-items {
-    left: 36%;
-    bottom: 7px;
-  }
   #hero .text-background .text {
     text-align: center;
   }
-}
-@media only screen and (max-width: 576px) {
-  #hero .slideshow-container .slideshow-items {
+  #hero .swiper-elements {
     display: none;
-  }
-  #hero .text-background .text h1 {
-    font-size: 17px;
-    padding-top: 15px;
-  }
-  #hero .text-background .text p {
-    font-size: 12px;
-    line-height: 15px;
   }
 }
 #hero2 {
@@ -503,9 +511,6 @@
 }
 
 @media only screen and (max-width: 1310px) {
-  #course .content .text .text-content {
-    width: 235px;
-  }
   #course .content .text .text-content h1 {
     font-size: 28px;
   }
@@ -1045,7 +1050,7 @@ footer .footer span a {
   }
 }
 .lightMode {
-  background-color: #e6e6e6 !important;
+  background-color: rgba(230, 230, 230, 0.7) !important;
 }
 .lightMode h1, .lightMode h2, .lightMode h3, .lightMode h5, .lightMode span, .lightMode i, .lightMode a, .lightMode p {
   color: #A62120 !important;
