@@ -1,0 +1,85 @@
+#spices {
+  background-color: #A62120;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+#spices .background {
+  flex: 50%;
+}
+#spices .background img {
+  display: block;
+  width: 100%;
+}
+#spices .text {
+  flex: 50%;
+  align-self: center;
+  padding-left: 125px;
+}
+#spices .text h1 {
+  width: 432px;
+  padding-bottom: 8px;
+  font-size: 32px;
+}
+#spices .text h2 {
+  width: 402px;
+  padding-bottom: 33px;
+  font-size: 22px;
+}
+#spices .text p {
+  width: 431px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 1310px) {
+  #spices .content .text {
+    padding: 0 35px;
+  }
+  #spices .content .text h1 {
+    width: unset;
+  }
+  #spices .content .text h2 {
+    width: unset;
+  }
+  #spices .content .text p {
+    width: unset;
+  }
+}
+@media only screen and (max-width: 999px) {
+  #spices .content {
+    flex-direction: column;
+  }
+  #spices .content .background {
+    order: 2;
+  }
+  #spices .content .text {
+    order: 1;
+    padding: 150px 0;
+  }
+  #spices .content .text h1 {
+    width: 431px;
+  }
+  #spices .content .text h2 {
+    width: 404px;
+  }
+  #spices .content .text p {
+    width: 431px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #spices .content .text {
+    padding: 55px 15px;
+    text-align: center;
+  }
+  #spices .content .text h1 {
+    width: unset;
+    font-size: 28px;
+  }
+  #spices .content .text h2 {
+    font-size: 16px;
+    width: unset;
+  }
+  #spices .content .text p {
+    width: unset;
+  }
+}

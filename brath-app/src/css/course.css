@@ -1,0 +1,83 @@
+#course {
+  background-color: #A62120;
+}
+#course .text {
+  background-color: #A62120;
+  flex: 50%;
+  align-self: center;
+  justify-content: center;
+}
+#course .text .text-content {
+  font-family: "Roboto", sans-serif;
+  width: 300px;
+  margin: 0 auto;
+}
+#course .text .text-content h1 {
+  padding-bottom: 29px;
+  color: #fff;
+  font-size: 32px;
+}
+#course .text .text-content button {
+  background-color: #fff;
+  color: #252525;
+  text-decoration: none;
+  border: 1px solid #FF0000;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  border-radius: 20px;
+  width: 174px;
+  font-size: 16px;
+  margin-top: 47px;
+}
+#course .text .text-content ul {
+  padding-left: 20px;
+}
+#course .text .text-content ul li {
+  color: #fff;
+  line-height: 24px;
+}
+#course .text .text-content ul a {
+  font-size: 1em;
+}
+#course .picture {
+  flex: 50%;
+}
+#course .picture img {
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1310px) {
+  #course .content .text .text-content {
+    width: 235px;
+  }
+  #course .content .text .text-content h1 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 999px) {
+  #course .content {
+    flex-direction: column;
+  }
+  #course .content .text .text-content {
+    margin: 150px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #course .content .text .text-content {
+    margin: 100px 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #course .content .text .text-content {
+    margin: 40px 0;
+    width: unset;
+    text-align: center;
+  }
+  #course .content .text .text-content ul {
+    padding-left: 0;
+  }
+  #course .content .text .text-content ul li {
+    list-style: none;
+  }
+}

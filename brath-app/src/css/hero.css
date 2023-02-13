@@ -1,0 +1,135 @@
+#hero {
+  position: relative;
+}
+#hero .slideshow-container {
+  position: relative;
+}
+#hero .slideshow-container .mySlides {
+  display: none;
+}
+#hero .slideshow-container .mySlides img {
+  display: block;
+  width: 100%;
+}
+#hero .slideshow-container .slideshow-items {
+  position: absolute;
+  bottom: 25px;
+  left: 45%;
+}
+#hero .slideshow-container .dots .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin: 7px 10px;
+}
+#hero .slideshow-container .dots .dot:hover {
+  background-color: #FF0000;
+}
+#hero .slideshow-container .dots .active {
+  background-color: #FF0000;
+}
+#hero .slideshow-container .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#hero .slideshow-container .prev, #hero .slideshow-container .next {
+  cursor: pointer;
+}
+#hero .text-background {
+  width: 629px;
+  height: 348px;
+  background-color: rgba(0, 0, 0, 0.3019607843);
+  position: absolute;
+  top: 163px;
+}
+#hero .text-background .text {
+  width: 275px;
+  margin-left: 300px;
+}
+#hero .text-background .text h1 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  width: 242px;
+  font-weight: bolder;
+  padding-top: 67px;
+  padding-bottom: 15px;
+}
+#hero .text-background .text p {
+  color: #fff;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  width: 275px;
+}
+
+@media only screen and (max-width: 1450px) {
+  #hero .text-background {
+    top: 70px;
+    width: 470px;
+  }
+  #hero .text-background .text {
+    margin-left: 165px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #hero .text-background {
+    top: 0;
+    height: 100%;
+    width: 420px;
+  }
+  #hero .text-background .text {
+    margin-left: 110px;
+  }
+}
+@media only screen and (max-width: 999px) {
+  #hero .text-background {
+    position: unset;
+    width: 100%;
+    background-color: #000;
+  }
+  #hero .text-background .text {
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+  #hero .text-background .text h1 {
+    padding-top: 35px;
+  }
+  #hero .slideshow-container .slideshow-items {
+    left: 39%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #hero .slideshow-container .slideshow-items {
+    left: 36%;
+    bottom: 7px;
+  }
+  #hero .text-background .text {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #hero .slideshow-container .slideshow-items {
+    display: none;
+  }
+  #hero .text-background .text h1 {
+    font-size: 17px;
+    padding-top: 15px;
+  }
+  #hero .text-background .text p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
