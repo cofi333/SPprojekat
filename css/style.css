@@ -196,6 +196,9 @@
   #workTime .content .light-btn {
     text-align: right;
   }
+  #workTime .content .time {
+    margin-bottom: 5px;
+  }
 }
 @media only screen and (max-width: 768px) {
   #workTime .content span {
@@ -1047,7 +1050,7 @@ footer .footer span a {
   }
 }
 .lightMode {
-  background-color: #e6e6e6 !important;
+  background-color: rgba(230, 230, 230, 0.7) !important;
 }
 .lightMode h1, .lightMode h2, .lightMode h3, .lightMode h5, .lightMode span, .lightMode i, .lightMode a, .lightMode p {
   color: #A62120 !important;

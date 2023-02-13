@@ -38,6 +38,9 @@
   #workTime .content .light-btn {
     text-align: right;
   }
+  #workTime .content .time {
+    margin-bottom: 5px;
+  }
 }
 @media only screen and (max-width: 768px) {
   #workTime .content span {
