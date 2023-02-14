@@ -2,12 +2,28 @@ import React from 'react'
 import clock from '../pictures/Vector.svg';
 
 function WorkTime() {
+
+  function lightFunction() {
+    const workTime= document.getElementById("workTime");
+    const hero2 = document.getElementById("hero2");
+    const products = document.getElementById("products");
+    const aboutUs = document.getElementById("aboutUs");
+    const hero= document.getElementById("hero-text");
+    
+    workTime.classList.toggle("lightMode");
+    hero2.classList.toggle("lightMode");
+    products.classList.toggle("lightMode");
+    aboutUs.classList.toggle("lightMode");
+    hero.classList.toggle("lightMode");
+
+  }
+
   return (
     <section id="workTime">
         <div className="container">
             <div className="content">
 
-                <a className="light-btn">LIGHT <i className="fa-regular fa-lightbulb"></i></a>
+                <a onClick={lightFunction} className="light-btn">LIGHT <i className="fa-regular fa-lightbulb"></i></a>
 
                 <div className="time">
                  <img src={clock} alt="Time"/>
