@@ -10,9 +10,10 @@ import Spices from './components/Spices';
 import Order from './components/Order';
 import AboutUs from './components/AboutUs';
 import Footer from './components/Footer';
-
+import Popup from './components/popup';
 
 function App() {
+  
   return (
     <div className="App">
 
@@ -36,6 +37,7 @@ function App() {
 
       <Footer/>
 
+      <Popup/>
       
 
     </div>
