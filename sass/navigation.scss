@@ -15,6 +15,12 @@
         flex-grow:5;
         justify-content: right;
         margin:0 10px;
+
+    
+        &:hover {
+            color: #000;
+            transition: 0.2s;
+        }
     }
 
     
@@ -52,7 +58,10 @@
                 color:#FFFFFF;
             
                 
-                
+                &:hover {
+                    color:#000;
+                    transition: 0.2s;
+                }
             
             }
         }

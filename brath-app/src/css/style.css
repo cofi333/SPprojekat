@@ -43,6 +43,10 @@
   justify-content: right;
   margin: 0 10px;
 }
+#navigation #downloadBtn:hover {
+  color: #000;
+  transition: 0.2s;
+}
 #navigation #hamburgerIcon {
   display: none;
   font-size: 15px;
@@ -63,6 +67,10 @@
 #navigation ul li a {
   text-decoration: none;
   color: #FFFFFF;
+}
+#navigation ul li a:hover {
+  color: #000;
+  transition: 0.2s;
 }
 
 @media only screen and (max-width: 1310px) {
@@ -373,7 +381,6 @@
 }
 #hero2 .content .text .buttons a:hover {
   border: 1px solid red;
-  cursor:pointer;
 }
 #hero2 .content .pictures {
   flex: 50%;
@@ -591,13 +598,9 @@
   border: 1px solid #f00;
 }
 #products .pictures {
+  padding-left: 16px;
   padding-bottom: 227px;
 }
-
-#products .pictures img {
-  margin:5px;
-}
-
 #products #logoNew {
   display: block;
   margin: 0 auto;
