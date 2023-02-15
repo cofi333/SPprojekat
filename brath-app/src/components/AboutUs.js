@@ -8,10 +8,12 @@ import Grade4 from '../pictures/nagrada4.svg';
 import Icon1 from '../pictures/Group.png';
 import Icon2 from '../pictures/zvezdice.svg';
 import Icon3 from '../pictures/znak.svg';
+import Left from '../pictures/leftarrow.png';
+import Right from '../pictures/rightarrow.png';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import {EffectCoverflow} from "swiper";
+import {EffectCoverflow, Navigation} from "swiper";
 
 function AboutUs() {
   return (
@@ -92,8 +94,13 @@ function AboutUs() {
             slideShadows: true,
                 
             }}
-            modules={[EffectCoverflow]}
+            loop={true}
+            modules={[EffectCoverflow, Navigation]}
             className="mySwiper" 
+            navigation={{
+                prevEl: ".button-prev",
+                nextEl: ".button-next",
+              }}
             >
                 <SwiperSlide className="card">
                     <img src={Icon1} alt="Icon"/>
@@ -114,7 +121,49 @@ function AboutUs() {
                     <p className="p-card">Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</p>
                     <h5 className="p-card">Rene Weinstein</h5>
                 </SwiperSlide>
+
+                <SwiperSlide className="card">
+                    <img src={Icon1} alt="Icon"/>
+                    <img src={Icon2} alt="Stars" id="stars-icon"/>
+                                
+
+                    <p className="p-card">Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna  Luftballons Ut Turnbeutel nostrud exercitation ullamco .</p>
+                    <h3 className="p-card">Halling Tobias</h3>
+                    <h5 className="p-card">Koch</h5>
+
+                    <img id="quote-icon" src={Icon3} alt="Icon"/>
+                </SwiperSlide>
+                <SwiperSlide className="card2">
+                    <p className="p-card">Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.</p>
+                    <h5 className="p-card">Maria Kartofeln</h5>
+                </SwiperSlide>
+                <SwiperSlide className="card2">
+                    <p className="p-card">Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</p>
+                    <h5 className="p-card">Rene Weinstein</h5>
+                </SwiperSlide>
+                <SwiperSlide className="card">
+                    <img src={Icon1} alt="Icon"/>
+                    <img src={Icon2} alt="Stars" id="stars-icon"/>
+                                
+
+                    <p className="p-card">Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna  Luftballons Ut Turnbeutel nostrud exercitation ullamco .</p>
+                    <h3 className="p-card">Halling Tobias</h3>
+                    <h5 className="p-card">Koch</h5>
+
+                    <img id="quote-icon" src={Icon3} alt="Icon"/>
+                </SwiperSlide>
+                <SwiperSlide className="card2">
+                    <p className="p-card">Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.</p>
+                    <h5 className="p-card">Maria Kartofeln</h5>
+                </SwiperSlide>
+                <SwiperSlide className="card2">
+                    <p className="p-card">Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</p>
+                    <h5 className="p-card">Rene Weinstein</h5>
+                </SwiperSlide>
+                    <img src={Left} alt="Left arrow" className="button-prev"/>
+                    <img src={Right} alt="Right arrow" className="button-next"/>
             </Swiper>
+
 
             <div className="button">
                 <a>Alle Berichte</a>
