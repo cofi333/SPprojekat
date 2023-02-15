@@ -23,7 +23,7 @@ function WorkTime() {
         <div className="container">
             <div className="content">
 
-                <a onClick={lightFunction} className="light-btn">LIGHT <i className="fa-regular fa-lightbulb"></i></a>
+                <a onClick={lightFunction} className="light-btn" id="light">LIGHT <i className="fa-regular fa-lightbulb"></i></a>
 
                 <div className="time">
                  <img src={clock} alt="Time"/>

@@ -591,9 +591,13 @@
   border: 1px solid #f00;
 }
 #products .pictures {
-  padding-left: 16px;
   padding-bottom: 227px;
 }
+
+#products .pictures img {
+  margin:5px;
+}
+
 #products #logoNew {
   display: block;
   margin: 0 auto;
@@ -1085,6 +1089,9 @@ footer .footer span a {
 }
 .lightMode {
   background-color: rgba(230, 230, 230, 0.7) !important;
+}
+.lightMode #light {
+  color: #A62120 !important;
 }
 .lightMode h1, .lightMode h2, .lightMode h3, .lightMode h5, .lightMode span, .lightMode i, .lightMode p {
   color: #A62120 !important;

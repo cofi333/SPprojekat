@@ -93,7 +93,6 @@ function AboutUs() {
                 
             }}
             modules={[EffectCoverflow]}
-            loop={true}
             className="mySwiper" 
             >
                 <SwiperSlide className="card">
@@ -117,7 +116,7 @@ function AboutUs() {
                 </SwiperSlide>
             </Swiper>
 
-            <div class="button">
+            <div className="button">
                 <a>Alle Berichte</a>
             </div>
 
