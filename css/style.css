@@ -360,19 +360,19 @@
 #hero2 .content .text .buttons {
   margin-top: 66px;
   text-align: center;
+  gap: 15px;
 }
-#hero2 .content .text .buttons button {
+#hero2 .content .text .buttons a {
   background-color: #A62120;
   color: white;
   text-decoration: none;
   border: 1px solid #fff;
-  padding-top: 12px;
-  padding-bottom: 13px;
+  padding: 12px;
   border-radius: 20px;
   width: 174px;
 }
-#hero2 .content .text .buttons #leftBtn {
-  margin-right: 16px;
+#hero2 .content .text .buttons a:hover {
+  border: 1px solid red;
 }
 #hero2 .content .pictures {
   flex: 50%;
@@ -457,7 +457,7 @@
   #hero2 .content .text .buttons {
     margin-top: 35px;
   }
-  #hero2 .content .text .buttons button {
+  #hero2 .content .text .buttons a {
     width: 120px;
   }
 }
@@ -473,14 +473,19 @@
 #course .text .text-content {
   font-family: "Roboto", sans-serif;
   width: 300px;
-  margin: 0 auto;
+  margin: 25px auto;
 }
 #course .text .text-content h1 {
   padding-bottom: 29px;
   color: #fff;
   font-size: 32px;
 }
-#course .text .text-content button {
+#course .text .text-content .button {
+  margin: 35px 20px;
+  text-align: center;
+}
+#course .text .text-content .button a {
+  display: block;
   background-color: #fff;
   color: #252525;
   text-decoration: none;
@@ -490,7 +495,10 @@
   border-radius: 20px;
   width: 174px;
   font-size: 16px;
-  margin-top: 47px;
+}
+#course .text .text-content .button a:hover {
+  border: 1px solid #000;
+  cursor: pointer;
 }
 #course .text .text-content ul {
   padding-left: 20px;
@@ -540,6 +548,9 @@
   #course .content .text .text-content ul li {
     list-style: none;
   }
+  #course .content .text .text-content .button a {
+    margin: 5px auto;
+  }
 }
 #products {
   background-color: #000;
@@ -561,7 +572,9 @@
   width: 652px;
   margin: auto;
 }
-#products button {
+#products a {
+  display: block;
+  margin: 0 auto;
   background-color: #A62120;
   color: white;
   text-decoration: none;
@@ -570,8 +583,11 @@
   padding-bottom: 13px;
   border-radius: 20px;
   width: 174px;
-  height: 47px;
   font-size: 16px;
+}
+#products a:hover {
+  cursor: pointer;
+  border: 1px solid #f00;
 }
 #products .pictures {
   padding-left: 16px;
@@ -710,24 +726,23 @@
   padding-top: 193px;
   padding-bottom: 40px;
 }
-#order button {
+#order a {
+  display: block;
+  margin: 40px auto;
   background-color: #fff;
   color: #252525;
   text-decoration: none;
   border: 1px solid #FF0000;
-  padding-top: 12px;
-  padding-bottom: 13px;
+  padding: 13px 0;
   border-radius: 20px;
   width: 174px;
   font-size: 16px;
-  margin-top: 47px;
+}
+#order a:hover {
+  cursor: pointer;
+  border: 1px solid #000;
 }
 
-@media only screen and (max-width: 576px) {
-  #order {
-    background-attachment: scroll;
-  }
-}
 #aboutUs {
   background-color: #000;
   color: #fff;
@@ -748,7 +763,9 @@
   flex: 50%;
   padding-left: 25px;
 }
-#aboutUs button {
+#aboutUs a {
+  text-align: center;
+  display: block;
   background-color: #A62120;
   color: white;
   text-decoration: none;
@@ -757,8 +774,11 @@
   padding-bottom: 13px;
   border-radius: 20px;
   width: 174px;
-  height: 47px;
   font-size: 16px;
+}
+#aboutUs a:hover {
+  cursor: pointer;
+  border: 1px solid #A62120;
 }
 #aboutUs .text {
   margin-top: 167px;
@@ -866,6 +886,9 @@
   text-align: center;
   padding-bottom: 78px;
 }
+#aboutUs .quotes .button a {
+  margin: 0 auto;
+}
 #aboutUs .quotes h3 {
   text-align: center;
   color: #FFFFFF;
@@ -903,6 +926,9 @@
   #aboutUs .first-content .text {
     margin-top: 100px;
     text-align: center;
+  }
+  #aboutUs .first-content .text a {
+    margin: 0 auto;
   }
   #aboutUs .inactive-card {
     display: none;
@@ -993,6 +1019,13 @@ footer .pre-footer .informations {
   font-size: 16px;
   margin: auto 0;
 }
+footer .pre-footer .informations span a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .pre-footer .informations span a:hover {
+  color: #66000B;
+}
 footer .pre-footer .informations .phone {
   justify-content: unset;
   gap: 10px;
@@ -1052,7 +1085,7 @@ footer .footer span a {
 .lightMode {
   background-color: rgba(230, 230, 230, 0.7) !important;
 }
-.lightMode h1, .lightMode h2, .lightMode h3, .lightMode h5, .lightMode span, .lightMode i, .lightMode a, .lightMode p {
+.lightMode h1, .lightMode h2, .lightMode h3, .lightMode h5, .lightMode span, .lightMode i, .lightMode p {
   color: #A62120 !important;
 }
 .lightMode .p-card {

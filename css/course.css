@@ -10,14 +10,19 @@
 #course .text .text-content {
   font-family: "Roboto", sans-serif;
   width: 300px;
-  margin: 0 auto;
+  margin: 25px auto;
 }
 #course .text .text-content h1 {
   padding-bottom: 29px;
   color: #fff;
   font-size: 32px;
 }
-#course .text .text-content button {
+#course .text .text-content .button {
+  margin: 35px 20px;
+  text-align: center;
+}
+#course .text .text-content .button a {
+  display: block;
   background-color: #fff;
   color: #252525;
   text-decoration: none;
@@ -27,7 +32,10 @@
   border-radius: 20px;
   width: 174px;
   font-size: 16px;
-  margin-top: 47px;
+}
+#course .text .text-content .button a:hover {
+  border: 1px solid #000;
+  cursor: pointer;
 }
 #course .text .text-content ul {
   padding-left: 20px;
@@ -76,5 +84,8 @@
   }
   #course .content .text .text-content ul li {
     list-style: none;
+  }
+  #course .content .text .text-content .button a {
+    margin: 5px auto;
   }
 }

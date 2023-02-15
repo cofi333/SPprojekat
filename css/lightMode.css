@@ -1,7 +1,7 @@
 .lightMode {
   background-color: rgba(230, 230, 230, 0.7) !important;
 }
-.lightMode h1, .lightMode h2, .lightMode h3, .lightMode h5, .lightMode span, .lightMode i, .lightMode a, .lightMode p {
+.lightMode h1, .lightMode h2, .lightMode h3, .lightMode h5, .lightMode span, .lightMode i, .lightMode p {
   color: #A62120 !important;
 }
 .lightMode .p-card {

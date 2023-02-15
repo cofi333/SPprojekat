@@ -27,6 +27,7 @@ var swiper = new Swiper(".mySwiper", {
     },
 
     pagination: {
+      clickable: true,
       el: ".swiper-pagination",
     },
 

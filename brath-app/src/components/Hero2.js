@@ -15,8 +15,8 @@ function Hero2() {
                     id latine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</p>
 
                     <div className="buttons flex-container">
-                        <button id="leftBtn">Dry Aged</button>
-                        <button>Alte Wurtz</button>
+                        <a>Dry Aged</a>
+                        <a>Alte Wurtz</a>
                     </div>       
             </div>
 

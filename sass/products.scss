@@ -23,7 +23,10 @@
         margin:auto;
     }
 
-    button {
+    a {
+
+        display:block;
+        margin:0 auto;
         background-color: #A62120;
         color:white;
         text-decoration: none;
@@ -32,9 +35,13 @@
         padding-bottom:13px;
         border-radius: 20px;
         width:174px;
-        height:47px;
         font-size:16px;
 
+
+        &:hover {
+            cursor:pointer;
+            border:1px solid #f00;
+        }
     }
 
     .pictures {

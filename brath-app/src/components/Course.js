@@ -19,7 +19,9 @@ function Course() {
                     <li>lernen Sie die Kunst des Grillens</li>
                 </ul>
 
-                <button>GrillKurs</button>
+                <div class="button">
+                <a>GrillKurs</a>
+                </div>
                 </div>
             </div>
 

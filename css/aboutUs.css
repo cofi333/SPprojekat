@@ -18,7 +18,9 @@
   flex: 50%;
   padding-left: 25px;
 }
-#aboutUs button {
+#aboutUs a {
+  text-align: center;
+  display: block;
   background-color: #A62120;
   color: white;
   text-decoration: none;
@@ -27,8 +29,11 @@
   padding-bottom: 13px;
   border-radius: 20px;
   width: 174px;
-  height: 47px;
   font-size: 16px;
+}
+#aboutUs a:hover {
+  cursor: pointer;
+  border: 1px solid #A62120;
 }
 #aboutUs .text {
   margin-top: 167px;
@@ -136,6 +141,9 @@
   text-align: center;
   padding-bottom: 78px;
 }
+#aboutUs .quotes .button a {
+  margin: 0 auto;
+}
 #aboutUs .quotes h3 {
   text-align: center;
   color: #FFFFFF;
@@ -173,6 +181,9 @@
   #aboutUs .first-content .text {
     margin-top: 100px;
     text-align: center;
+  }
+  #aboutUs .first-content .text a {
+    margin: 0 auto;
   }
   #aboutUs .inactive-card {
     display: none;

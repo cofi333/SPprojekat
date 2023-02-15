@@ -27,7 +27,9 @@
         
     }
 
-    button {
+    a {
+        text-align: center;
+        display:block;
         background-color: #A62120;
         color:white;
         text-decoration: none;
@@ -36,9 +38,12 @@
         padding-bottom:13px;
         border-radius: 20px;
         width:174px;
-        height:47px;
         font-size:16px;
 
+        &:hover {
+            cursor:pointer;
+            border: 1px solid #A62120;
+        }
     }
     
     .text {
@@ -190,6 +195,10 @@
         .button {
             text-align: center;
             padding-bottom:78px;
+            
+            a {
+                margin:0 auto;
+            }
         }
         
         h3 {
@@ -254,6 +263,10 @@
             .text {
                 margin-top:100px;
                 text-align: center;
+
+                a {
+                    margin:0 auto;
+                }
             }
         }
 

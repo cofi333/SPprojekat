@@ -13,21 +13,19 @@
   padding-top: 193px;
   padding-bottom: 40px;
 }
-#order button {
+#order a {
+  display: block;
+  margin: 40px auto;
   background-color: #fff;
   color: #252525;
   text-decoration: none;
   border: 1px solid #FF0000;
-  padding-top: 12px;
-  padding-bottom: 13px;
+  padding: 13px 0;
   border-radius: 20px;
   width: 174px;
   font-size: 16px;
-  margin-top: 47px;
 }
-
-@media only screen and (max-width: 576px) {
-  #order {
-    background-attachment: scroll;
-  }
+#order a:hover {
+  cursor: pointer;
+  border: 1px solid #000;
 }

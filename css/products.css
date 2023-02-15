@@ -18,7 +18,9 @@
   width: 652px;
   margin: auto;
 }
-#products button {
+#products a {
+  display: block;
+  margin: 0 auto;
   background-color: #A62120;
   color: white;
   text-decoration: none;
@@ -27,8 +29,11 @@
   padding-bottom: 13px;
   border-radius: 20px;
   width: 174px;
-  height: 47px;
   font-size: 16px;
+}
+#products a:hover {
+  cursor: pointer;
+  border: 1px solid #f00;
 }
 #products .pictures {
   padding-left: 16px;

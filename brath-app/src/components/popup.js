@@ -31,7 +31,7 @@ function popup() {
         <div className="content">
         <h1>We value your privacy</h1>
             <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. Cookie Policy</p>
-            <a onclick={closePopup}><i class="fa-solid fa-x"></i></a>
+            <a onClick={closePopup}><i className="fa-solid fa-x"></i></a>
         </div>
     </div>
   )

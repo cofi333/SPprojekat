@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Logo from '../pictures/geneussnetzlogo.png';
 import Logo2 from '../pictures/vonal 1.svg';
 import Grade1 from '../pictures/nagrada1.svg';
@@ -11,7 +11,7 @@ import Icon3 from '../pictures/znak.svg';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import { EffectCoverflow} from "swiper";
+import {EffectCoverflow} from "swiper";
 
 function AboutUs() {
   return (
@@ -26,7 +26,7 @@ function AboutUs() {
                     <h1>Metzgerei Brath ist Mitglied 
                         im Genussnetzwerk</h1>
                     
-                    <button>Gehen zu site</button>
+                    <a>Gehen zu site</a>
                 </div>
             </div>
 
@@ -84,7 +84,6 @@ function AboutUs() {
             grabCursor={true}
             centeredSlides={true}
             slidesPerView={"auto"}
-            loop={true}
             coverflowEffect={{
             rotate: 0,
             stretch: 0,
@@ -94,6 +93,7 @@ function AboutUs() {
                 
             }}
             modules={[EffectCoverflow]}
+            loop={true}
             className="mySwiper" 
             >
                 <SwiperSlide className="card">
@@ -117,8 +117,13 @@ function AboutUs() {
                 </SwiperSlide>
             </Swiper>
 
+            <div class="button">
+                <a>Alle Berichte</a>
             </div>
 
+            </div>
+
+            
             
 
         </div>

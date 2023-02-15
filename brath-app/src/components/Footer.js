@@ -23,15 +23,13 @@ function Footer() {
 
                     <div className="phone flex-container">
                         <img src={Phone} alt="Icon"/>
-                        <span>
-                            +49 721 358060
-                            </span>
+                        <span> <a href="tel: +49 721 358060"> +49 721 358060</a></span>
                     </div>
 
                     <div className="mail flex-container">
                         <img src={Mail} alt="Icon"/>
-                        <span>
-                            info@partyservice-brath.de</span>
+                        <span> <a href="mailto:info@partyservice-brath.de">info@partyservice-brath.de</a>
+                            </span>
                     </div>
                     
 
@@ -45,10 +43,10 @@ function Footer() {
             <div className="social-medias">
                 <div className="flex-container">
                     <span>Besuchen Sie uns auf:</span>
-                    <img src={Twitter} alt="Twitter Logo"/>
-                    <img src={Facebook} alt="Facebook Logo"/>
-                    <img src={Instagram} alt="Instagram Logo"/>
-                    <img src={Youtube} alt="Youtube Logo"/>
+                    <a href="#"><img src={Twitter} alt="Twitter Logo"/></a>
+                    <a href="#"><img src={Facebook} alt="Facebook Logo"/></a>
+                    <a href="#"><img src={Instagram} alt="Instagram Logo"/></a>
+                    <a href="#"><img src={Youtube} alt="Youtube Logo"/></a>
                 </div>
             </div>
 

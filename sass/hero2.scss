@@ -38,22 +38,23 @@
 
             margin-top:66px;
             text-align: center;
+            gap:15px;
     
-        button {
+        a {
             background-color: #A62120;
             color:white;
             text-decoration: none;
             border:1px solid #fff;
-            padding-top:12px;
-            padding-bottom:13px;
+            padding:12px;
             border-radius: 20px;
             width:174px;
     
+            &:hover {
+                border: 1px solid red;
+            }
         }
     
-        #leftBtn {
-            margin-right:16px;
-        }
+      
     
     }
     
@@ -191,7 +192,7 @@
 
                 .buttons {
                     margin-top:35px;
-                    button {
+                    a {
                         width:120px;
                     }
                 }

@@ -6,7 +6,7 @@ function Order() {
 
             <div className="container">
                 <h1>Fleischversand</h1>
-                <button>Jetzt bestellen</button>
+                <a>Jetzt bestellen</a>
            </div>
            
     </section>

@@ -31,19 +31,19 @@
 #hero2 .content .text .buttons {
   margin-top: 66px;
   text-align: center;
+  gap: 15px;
 }
-#hero2 .content .text .buttons button {
+#hero2 .content .text .buttons a {
   background-color: #A62120;
   color: white;
   text-decoration: none;
   border: 1px solid #fff;
-  padding-top: 12px;
-  padding-bottom: 13px;
+  padding: 12px;
   border-radius: 20px;
   width: 174px;
 }
-#hero2 .content .text .buttons #leftBtn {
-  margin-right: 16px;
+#hero2 .content .text .buttons a:hover {
+  border: 1px solid red;
 }
 #hero2 .content .pictures {
   flex: 50%;
@@ -128,7 +128,7 @@
   #hero2 .content .text .buttons {
     margin-top: 35px;
   }
-  #hero2 .content .text .buttons button {
+  #hero2 .content .text .buttons a {
     width: 120px;
   }
 }

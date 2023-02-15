@@ -17,7 +17,7 @@
         .text-content {
             font-family: 'Roboto', sans-serif;
             width:300px;
-            margin:0 auto;
+            margin:25px auto;
 
         h1 {
           
@@ -28,7 +28,11 @@
 
         }
 
-        button {
+      .button {
+        margin:35px 20px;
+        text-align: center;
+          a {
+            display:block;
             background-color: #fff;
             color:#252525;
             text-decoration: none;
@@ -38,9 +42,14 @@
             border-radius: 20px;
             width:174px;
             font-size:16px;
-            margin-top:47px;
+
+            &:hover {
+                border:1px solid #000;
+                cursor:pointer;
+            }
         }
 
+      }
         ul {
            
             padding-left:20px;
@@ -133,6 +142,12 @@
                             list-style: none;
                         }
                     }
+
+                .button {
+                    a {
+                        margin:5px auto;
+                    }
+                }
                 
                 }
             }
