@@ -102,6 +102,8 @@ function AboutUs() {
                 nextEl: ".button-next",
               }}
             >
+                
+            
                 <SwiperSlide className="card">
                     <img src={Icon1} alt="Icon"/>
                     <img src={Icon2} alt="Stars" id="stars-icon"/>
@@ -113,53 +115,39 @@ function AboutUs() {
 
                     <img id="quote-icon" src={Icon3} alt="Icon"/>
                 </SwiperSlide>
+
                 <SwiperSlide className="card2">
                     <p className="p-card">Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.</p>
                     <h5 className="p-card">Maria Kartofeln</h5>
                 </SwiperSlide>
+
                 <SwiperSlide className="card2">
                     <p className="p-card">Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</p>
                     <h5 className="p-card">Rene Weinstein</h5>
                 </SwiperSlide>
 
-                <SwiperSlide className="card">
-                    <img src={Icon1} alt="Icon"/>
-                    <img src={Icon2} alt="Stars" id="stars-icon"/>
-                                
-
-                    <p className="p-card">Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna  Luftballons Ut Turnbeutel nostrud exercitation ullamco .</p>
-                    <h3 className="p-card">Halling Tobias</h3>
-                    <h5 className="p-card">Koch</h5>
-
-                    <img id="quote-icon" src={Icon3} alt="Icon"/>
-                </SwiperSlide>
                 <SwiperSlide className="card2">
-                    <p className="p-card">Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.</p>
-                    <h5 className="p-card">Maria Kartofeln</h5>
+                    <p className="p-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h5 className="p-card">Lorem ipsum dolor</h5>
                 </SwiperSlide>
-                <SwiperSlide className="card2">
-                    <p className="p-card">Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</p>
-                    <h5 className="p-card">Rene Weinstein</h5>
-                </SwiperSlide>
-                <SwiperSlide className="card">
-                    <img src={Icon1} alt="Icon"/>
-                    <img src={Icon2} alt="Stars" id="stars-icon"/>
-                                
 
-                    <p className="p-card">Wiener Schnitzel amet, consectetur Handtasche elit, sed do eiusmod tempor Stuttgart ut labore et dolore magna  Luftballons Ut Turnbeutel nostrud exercitation ullamco .</p>
-                    <h3 className="p-card">Halling Tobias</h3>
-                    <h5 className="p-card">Koch</h5>
+                <SwiperSlide className="card2">
+                    <p className="p-card">Eu turpis egestas pretium aenean pharetra. Cursus metus aliquam eleifend mi. Viverra maecenas accumsan lacus vel. Donec pretium vulputate sapien nec. Auctor augue mauris augue neque gravida in fermentum.</p>
+                    <h5 className="p-card">Lorem ipsum dolor sit amet</h5>
+                </SwiperSlide>
 
-                    <img id="quote-icon" src={Icon3} alt="Icon"/>
-                </SwiperSlide>
                 <SwiperSlide className="card2">
-                    <p className="p-card">Sprechen Sie deutsch aliquip ex ea commodo consequat. Wiener Schnitzel aute irure dolor in reprehenderit Guten Tag mollit anim Stuttgart.</p>
-                    <h5 className="p-card">Maria Kartofeln</h5>
+                    <p className="p-card">Porttitor lacus luctus accumsan tortor posuere. Malesuada pellentesque elit eget gravida cum sociis natoque. Vestibulum mattis ullamcorper velit sed ullamcorper morbi.</p>
+                    <h5 className="p-card">Lorem ipsum dolor sit amet</h5>
                 </SwiperSlide>
+
                 <SwiperSlide className="card2">
-                    <p className="p-card">Achtung fur atine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</p>
-                    <h5 className="p-card">Rene Weinstein</h5>
+                    <p className="p-card">Diam quis enim lobortis scelerisque fermentum dui faucibus in. Arcu dui vivamus arcu felis bibendum ut.</p>
+                    <h5 className="p-card">Lorem ipsum dolor sit amet</h5>
                 </SwiperSlide>
+
+               
+
                     <img src={Left} alt="Left arrow" className="button-prev"/>
                     <img src={Right} alt="Right arrow" className="button-next"/>
             </Swiper>
