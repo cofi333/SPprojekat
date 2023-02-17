@@ -1,20 +1,24 @@
 [
     {
+        "id": 1,
         "image": "/grade-icons/nagrada1.svg",
         "description": "Tollit argumentum genau Saepe lobortis" 
     },
 
     {
+        "id": 2,
         "image": "/grade-icons/nagrada2.svg",
         "description": "Schneewittchen denique"
     },
 
     {
+        "id": 3,
         "image": "/grade-icons/nagrada3.svg",
         "description": "Grimms Märchen expetenda"
     },
 
     {
+        "id": 4,
         "image": "/grade-icons/nagrada4.svg",
         "description": "Mettwurst mei ullum gloriatur."
     }

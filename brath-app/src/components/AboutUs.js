@@ -43,8 +43,9 @@ function AboutUs() {
         <div className="flex-container2 second-container">
             {
                 Grades && Grades.map(grade => {
+                    
                     return(
-                        <div id="item">
+                        <div id="item" key={grade.id}>
                             <img src={grade.image} alt="Item"/>
                             <p>{grade.description}</p>
                         </div>
