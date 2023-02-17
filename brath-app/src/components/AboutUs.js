@@ -1,10 +1,6 @@
 import React from 'react';
 import Logo from '../pictures/geneussnetzlogo.png';
 import Logo2 from '../pictures/vonal 1.svg';
-import Grade1 from '../pictures/nagrada1.svg';
-import Grade2 from '../pictures/nagrada2.svg';
-import Grade3 from '../pictures/nagrada3.svg';
-import Grade4 from '../pictures/nagrada4.svg';
 import Icon1 from '../pictures/Group.png';
 import Icon2 from '../pictures/zvezdice.svg';
 import Icon3 from '../pictures/znak.svg';
@@ -15,6 +11,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import {EffectCoverflow, Navigation} from "swiper";
 import Button from '../components/Button';
+import Grades from '../grades.json';
 
 function AboutUs() {
   return (
@@ -44,32 +41,19 @@ function AboutUs() {
         <h1>Auszeichnungen</h1>
 
         <div className="flex-container2 second-container">
-            
+            {
+                Grades && Grades.map(grade => {
+                    return(
+                        <div id="item">
+                            <img src={grade.image} alt="Item"/>
+                            <p>{grade.description}</p>
+                        </div>
+                    )
+                })
+            }
            
 
-            <div id="item">
-                <img src={Grade1} alt="Item"/>
-                <p>Tollit argumentum genau
-                    Saepe lobortis</p>
-            </div>
-
-            <div id="item">
-                <img src={Grade2} alt="Item"/>
-                <p>Schneewittchen
-                    denique</p>
-            </div>
-
-            <div id="item">
-                <img src={Grade3} alt="Item"/>
-                <p>Grimms Märchen 
-                    expetenda</p>
-            </div>
-
-            <div id="item">
-                <img src={Grade4} alt="Item"/>
-                <p>Mettwurst mei 
-                    ullum gloriatur.</p>
-            </div>
+            
         </div>
     </div>
 
