@@ -1,5 +1,6 @@
 import React from 'react'
 import Background from '../pictures/background2.jpg';
+import Button from '../components/Button';
 
 function Course() {
   return (
@@ -20,7 +21,7 @@ function Course() {
                 </ul>
 
                 <div className="button">
-                <a>GrillKurs</a>
+                    <Button styleClass="white-button" link="#" value="GrillKurs"/>
                 </div>
                 </div>
             </div>

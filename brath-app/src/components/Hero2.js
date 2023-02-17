@@ -3,6 +3,7 @@ import Food1 from '../pictures/food1.svg';
 import Food2 from '../pictures/food2.png';
 import Food3 from '../pictures/food3.svg';
 import Food4 from '../pictures/food4.svg';
+import Button from '../components/Button';
 
 function Hero2() {
   return (
@@ -15,8 +16,8 @@ function Hero2() {
                     id latine indoctum complectitur HugoClub Mate mea meliore denique nominavi id. Ohrwurm expetenda nam an, his ei Reise euismod assentior.</p>
 
                     <div className="buttons flex-container">
-                        <a>Dry Aged</a>
-                        <a>Alte Wurtz</a>
+                        <Button styleClass='red-button' link="#" value='Dry Aged'/>
+                        <Button styleClass='red-button' link="#" value="Alte Wurtz"/>
                     </div>       
             </div>
 

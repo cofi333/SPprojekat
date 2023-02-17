@@ -26,6 +26,31 @@
   display: flex;
 }
 
+.red-button {
+  background-color: #A62120;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 12px;
+  border-radius: 20px;
+  width: 174px;
+}
+
+.white-button {
+  display: block;
+  background-color: #fff;
+  color: #252525;
+  text-decoration: none;
+  border: 1px solid #FF0000;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  border-radius: 20px;
+  width: 174px;
+  font-size: 16px;
+}
+
+
+
 #navigation {
   height: 93px;
   background-color: #B50014;

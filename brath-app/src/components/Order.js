@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../components/Button';
 
 function Order() {
   return (
@@ -6,7 +7,7 @@ function Order() {
 
             <div className="container">
                 <h1>Fleischversand</h1>
-                <a>Jetzt bestellen</a>
+                <Button styleClass="white-button" link="#" value="Jetzt bestellen"/>
            </div>
            
     </section>

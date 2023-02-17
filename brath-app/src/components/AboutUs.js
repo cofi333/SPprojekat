@@ -14,6 +14,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import {EffectCoverflow, Navigation} from "swiper";
+import Button from '../components/Button';
 
 function AboutUs() {
   return (
@@ -28,7 +29,7 @@ function AboutUs() {
                     <h1>Metzgerei Brath ist Mitglied 
                         im Genussnetzwerk</h1>
                     
-                    <a>Gehen zu site</a>
+                    <Button styleClass="red-button" link="#" value="Gehen zu site"/>
                 </div>
             </div>
 
@@ -154,7 +155,7 @@ function AboutUs() {
 
 
             <div className="button">
-                <a>Alle Berichte</a>
+                <Button styleClass="red-button" value="Alle Berichte" link="#"/>
             </div>
 
             </div>
