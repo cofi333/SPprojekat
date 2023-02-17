@@ -330,6 +330,10 @@
 @media only screen and (max-width: 768px) {
   #hero .text-background .text {
     text-align: center;
+    padding-bottom: unset;
+  }
+  #hero .text-background .text h1 {
+    width: unset;
   }
   #hero .swiper-elements {
     display: none;
@@ -403,8 +407,11 @@
   .second-container {
     width: 768px;
   }
+  #hero2 {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
   #hero2 .content {
-    padding-top: 40px;
     flex-direction: column;
     gap: 50px;
   }

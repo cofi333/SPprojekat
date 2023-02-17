@@ -167,7 +167,11 @@
         .text-background {
             .text {
                 text-align: center;
-               
+                padding-bottom:unset;
+                
+                h1 {
+                    width:unset;
+                }
             }
         }
 

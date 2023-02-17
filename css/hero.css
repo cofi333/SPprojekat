@@ -104,6 +104,10 @@
 @media only screen and (max-width: 768px) {
   #hero .text-background .text {
     text-align: center;
+    padding-bottom: unset;
+  }
+  #hero .text-background .text h1 {
+    width: unset;
   }
   #hero .swiper-elements {
     display: none;
